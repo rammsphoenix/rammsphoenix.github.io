@@ -1,0 +1,126 @@
+/* RAMMS Rules Site — Index Page Stylesheet */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 22px 64px;
+  background: #edf0f4;
+  color: #1c1c1c;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* ── Header ── */
+header {
+  background: linear-gradient(135deg, #1a3858, #2a5080);
+  color: #fff;
+  padding: 22px 28px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+
+.org-name {
+  font-size: .78em;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  opacity: .72;
+  margin-bottom: 5px;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+  font-size: .83em;
+  color: #5a6a7a;
+  padding: 8px 2px 16px;
+}
+
+.breadcrumb a {
+  color: #2a6090;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover { text-decoration: underline; }
+
+.breadcrumb span { margin: 0 6px; opacity: .5; }
+
+/* ── Section heading ── */
+h2.group-title {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #5a6a7a;
+  margin: 28px 0 10px;
+}
+
+h2.group-title:first-of-type { margin-top: 8px; }
+
+/* ── Card grid ── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #1c1c1c;
+  border-left: 4px solid #1a3858;
+  box-shadow: 0 1px 4px rgba(0,0,0,.09);
+  transition: box-shadow .15s, border-left-color .15s, transform .1s;
+}
+
+.card:hover {
+  box-shadow: 0 3px 10px rgba(0,0,0,.14);
+  border-left-color: #d68c00;
+  transform: translateY(-1px);
+}
+
+.card-label {
+  font-weight: 600;
+  font-size: .97em;
+  line-height: 1.3;
+}
+
+.card-sub {
+  font-size: .8em;
+  color: #6a7a8a;
+  margin-top: 2px;
+}
+
+.card-arrow {
+  font-size: 1.1em;
+  color: #aab8c4;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.card:hover .card-arrow { color: #d68c00; }
+
+/* ── Intro blurb ── */
+.intro {
+  color: #4a5a6a;
+  font-size: .95em;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 500px) {
+  body { padding: 14px 13px 40px; font-size: 15px; }
+  header h1 { font-size: 1.55em; }
+  .card-grid { grid-template-columns: 1fr; }
+}
