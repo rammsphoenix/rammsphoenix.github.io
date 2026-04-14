@@ -1,0 +1,171 @@
+/* RAMMS Site — Shared Stylesheet */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #edf0f4;
+  color: #1c1c1c;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ── Site Header ── */
+.site-header {
+  background: linear-gradient(135deg, #1a3858, #2a5080);
+  color: #fff;
+  padding: 18px 28px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+
+.site-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.site-logo {
+  height: 56px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.site-header-text .site-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.site-header-text .site-subtitle {
+  font-size: .78em;
+  opacity: .72;
+  letter-spacing: .03em;
+  margin-top: 2px;
+}
+
+/* ── Page wrapper ── */
+.page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 22px 64px;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+  font-size: .83em;
+  color: #5a6a7a;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: #2a6090;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb span { margin: 0 6px; opacity: .5; }
+
+/* ── Description / intro ── */
+.intro {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+  color: #333;
+  font-size: .97em;
+}
+
+/* ── Section heading ── */
+h2.group-title {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #5a6a7a;
+  margin: 0 0 10px;
+}
+
+/* ── Card grid ── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: #1c1c1c;
+  border-left: 4px solid #1a3858;
+  box-shadow: 0 1px 4px rgba(0,0,0,.09);
+  transition: box-shadow .15s, border-left-color .15s, transform .1s;
+}
+
+.card:hover {
+  box-shadow: 0 3px 10px rgba(0,0,0,.14);
+  border-left-color: #d68c00;
+  transform: translateY(-1px);
+}
+
+.card-label {
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.3;
+}
+
+.card-sub {
+  font-size: .82em;
+  color: #6a7a8a;
+  margin-top: 3px;
+}
+
+.card-arrow {
+  font-size: 1.2em;
+  color: #aab8c4;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.card:hover .card-arrow { color: #d68c00; }
+
+/* ── Calendar embed ── */
+.calendar-wrap {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,.09);
+  line-height: 0;
+}
+
+.calendar-wrap iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  height: 640px;
+}
+
+/* ── Footer ── */
+.site-footer {
+  background: #1a3858;
+  color: rgba(255,255,255,.55);
+  text-align: center;
+  font-size: .82em;
+  padding: 16px 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 540px) {
+  body { font-size: 15px; }
+  .site-logo { height: 42px; }
+  .site-header-text .site-title { font-size: 1.2em; }
+  .card-grid { grid-template-columns: 1fr; }
+  .calendar-wrap iframe { height: 480px; }
+}
