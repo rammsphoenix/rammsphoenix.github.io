@@ -1,4 +1,4 @@
-/* RAMMS Rules Site — Index Page Stylesheet */
+/* RAMMS Rules Site — Index / Landing Stylesheet */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -6,27 +6,42 @@ body {
   max-width: 780px;
   margin: 0 auto;
   padding: 24px 22px 64px;
-  background: #edf0f4;
-  color: #1c1c1c;
+  background: #eef0f3;
+  color: #1a1a1a;
   line-height: 1.5;
   font-size: 16px;
 }
 
 /* ── Header ── */
 header {
-  background: linear-gradient(135deg, #1a3858, #2a5080);
+  position: relative;
+  background: linear-gradient(135deg, #1f1f1f 0%, #4a0d13 68%, #6e1018 100%);
   color: #fff;
-  padding: 22px 28px;
+  padding: 22px 100px 22px 28px;
   border-radius: 10px;
   margin-bottom: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,.2);
+  box-shadow: 0 3px 10px rgba(0,0,0,.22);
+}
+
+.brand-logo {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.28);
 }
 
 .org-name {
   font-size: .78em;
   text-transform: uppercase;
   letter-spacing: .14em;
-  opacity: .72;
+  opacity: .75;
   margin-bottom: 5px;
 }
 
@@ -39,12 +54,12 @@ header h1 {
 /* ── Breadcrumb ── */
 .breadcrumb {
   font-size: .83em;
-  color: #5a6a7a;
+  color: #6a6f74;
   padding: 8px 2px 16px;
 }
 
 .breadcrumb a {
-  color: #2a6090;
+  color: #c8102e;
   text-decoration: none;
 }
 
@@ -58,7 +73,7 @@ h2.group-title {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .08em;
-  color: #5a6a7a;
+  color: #6a6f74;
   margin: 28px 0 10px;
 }
 
@@ -79,15 +94,15 @@ h2.group-title:first-of-type { margin-top: 8px; }
   border-radius: 8px;
   padding: 14px 16px;
   text-decoration: none;
-  color: #1c1c1c;
-  border-left: 4px solid #1a3858;
+  color: #1a1a1a;
+  border-left: 4px solid #c8102e;
   box-shadow: 0 1px 4px rgba(0,0,0,.09);
   transition: box-shadow .15s, border-left-color .15s, transform .1s;
 }
 
 .card:hover {
-  box-shadow: 0 3px 10px rgba(0,0,0,.14);
-  border-left-color: #d68c00;
+  box-shadow: 0 3px 10px rgba(0,0,0,.16);
+  border-left-color: #8e0b20;
   transform: translateY(-1px);
 }
 
@@ -99,28 +114,30 @@ h2.group-title:first-of-type { margin-top: 8px; }
 
 .card-sub {
   font-size: .8em;
-  color: #6a7a8a;
+  color: #6a6f74;
   margin-top: 2px;
 }
 
 .card-arrow {
   font-size: 1.1em;
-  color: #aab8c4;
+  color: #c0c4c9;
   flex-shrink: 0;
   margin-left: 10px;
 }
 
-.card:hover .card-arrow { color: #d68c00; }
+.card:hover .card-arrow { color: #c8102e; }
 
 /* ── Intro blurb ── */
 .intro {
-  color: #4a5a6a;
+  color: #4a4f54;
   font-size: .95em;
   margin-bottom: 4px;
 }
 
 @media (max-width: 500px) {
   body { padding: 14px 13px 40px; font-size: 15px; }
-  header h1 { font-size: 1.55em; }
+  header { padding: 16px 76px 16px 16px; }
+  header h1 { font-size: 1.5em; }
+  .brand-logo { width: 48px; height: 48px; right: 12px; }
   .card-grid { grid-template-columns: 1fr; }
 }
