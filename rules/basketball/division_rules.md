@@ -12,8 +12,8 @@
 - **Boys 5th-8th & Girls 6th-8th:** 3 seconds in the key [25-27].
 
 **3. Points Awarded for Shooting Fouls (Outside Last 2 Minutes):**
-- **Boys K, 1st-2nd, Girls K-1st, 2nd-3rd, 4th-5th:** 1 point plus the ball for all shots (Note: Girls 4th-5th rules have some ambiguity regarding 3-point fouls) [28].
-- **Boys 3rd-4th, 5th-8th, Girls 6th-8th:** 1 point plus the ball for 2-point shots; 2 points plus the ball for 3-point shots [28].
+- **Boys K, 1st-2nd, 3rd-4th, Girls K-1st, 2nd-3rd, 4th-5th:** 1 point plus the ball for all shooting fouls [28].
+- **Boys 5th-8th & Girls 6th-8th:** 1 point plus the ball for 2-point shots; 2 points plus the ball for 3-point shots [28].
 
 **4. Defensive Limitations:**
 - **Kindergarten / Girls K-1st:** Strict man-to-man defense only [19, 20]. Defenders may not steal or swipe at the ball [19, 20, 29]. Double teaming is prohibited everywhere [19, 20, 29]. Switching is allowed on picks but players must switch back at the first opportunity [19, 20, 29]. Defenders can use a simple sag (no more than 3 feet if the offensive player is inside the arc) [19, 20, 30].
