@@ -270,7 +270,9 @@ function passes(e){
   if(!FILTER.types.has(e.type)) return false;
   if(FILTER.maxMiles!=null && FILTER.origin){
     const d=distOf(e);
-    if(d==null || d>FILTER.maxMiles) return false;
+    // Only hide events we can actually place AND that are too far. Events with
+    // no coordinates are kept visible (never blank the calendar on missing data).
+    if(d!=null && d>FILTER.maxMiles) return false;
   }
   return true;
 }
@@ -284,6 +286,9 @@ function updateCount(){
   let txt=`Showing ${VISIBLE.length} of ${EVENTS.length} events`;
   if(FILTER.origin && FILTER.maxMiles!=null) txt+=` within ${FILTER.maxMiles} mi of ${FILTER.origin.place||FILTER.originZip}`;
   else if(FILTER.origin) txt+=` · distances from ${FILTER.origin.place||FILTER.originZip}`;
+  // Warn if a distance cap is set but the calendar file carries no coordinates.
+  if(FILTER.origin && FILTER.maxMiles!=null && !EVENTS.some(e=>e.lat!=null))
+    txt+=" · ⚠ this calendar file has no location data, so distance can't be applied";
   c.textContent=txt;
 }
 
@@ -421,13 +426,14 @@ document.body.addEventListener("click",ev=>{
   if(ev.target.closest(".more")) setMode("agenda");
 });
 
-fetch(ICS_URL,{cache:"no-store"})
+fetch(ICS_URL+"?_="+Date.now(),{cache:"no-store"})  // cache-bust so a stale CDN copy can't blank the filters
   .then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.text(); })
   .then(text=>{
     EVENTS=parseICS(text);
-    // seed ZIP cache with venue centroids so nearby lookups work even offline
+    // seed ZIP cache with venue centroids so nearby lookups work even offline.
+    // Match the ZIP at the END of the address (avoids 5-digit street numbers).
     EVENTS.forEach(e=>{
-      const z=(e.address.match(/\b(\d{5})\b/)||[])[1];
+      const z=(e.address.match(/(\d{5})(?!.*\d)/)||[])[1];
       if(z && e.lat!=null && !ZIP_CACHE[z]) ZIP_CACHE[z]={lat:e.lat,lon:e.lon,place:e.city+", AZ"};
     });
     saveZipCache();
