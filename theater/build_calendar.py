@@ -162,6 +162,8 @@ def build_events(data: dict, asof: dt.date, window_months: int):
         ]
         if t.get("city"):
             desc_parts.append(f"City: {t['city']}")
+        if t.get("address"):
+            desc_parts.append(f"Address: {t['address']}")
         if t.get("age_cap"):
             desc_parts.append(f"Cast age cap: {t['age_cap']}")
         if ev.get("end") and parse_date(ev.get("end")):
@@ -175,7 +177,10 @@ def build_events(data: dict, asof: dt.date, window_months: int):
             desc_parts.append(f"Source: {ev['source']}")
         description = "\n".join(desc_parts)
 
-        location = ", ".join(p for p in [t.get("venue"), t.get("city"), "AZ"] if p)
+        # Prefer a full street address; fall back to venue/city.
+        location = t.get("address") or ", ".join(
+            p for p in [t.get("venue"), t.get("city"), "AZ"] if p)
+        lat, lon = t.get("lat"), t.get("lon")
 
         uid = event_uid(ev, start)
         # If two source rows collide on uid, keep the earlier/lower start.
@@ -188,6 +193,7 @@ def build_events(data: dict, asof: dt.date, window_months: int):
             # DTEND for all-day events is exclusive -> day after last day.
             "end_exclusive": end + dt.timedelta(days=1),
             "location": location,
+            "geo": (lat, lon) if lat is not None and lon is not None else None,
             "description": description,
             "url": ev.get("source") or t.get("website") or "",
             "confidence": conf,
@@ -220,6 +226,8 @@ def render_ics(data: dict, vevents: dict, asof: dt.date) -> str:
             f"LOCATION:{esc(ev['location'])}",
             f"DESCRIPTION:{esc(ev['description'])}",
         ]
+        if ev.get("geo"):
+            lines.append(f"GEO:{ev['geo'][0]:.4f};{ev['geo'][1]:.4f}")
         if ev["url"]:
             lines.append(f"URL:{esc(ev['url'])}")
         if ev["confidence"] == "tentative":
@@ -427,6 +435,8 @@ def parse_ics(text: str) -> dict:
                 cur["end"] = value
             elif name == "LOCATION":
                 cur["location"] = value
+            elif name == "GEO":
+                cur["geo"] = value
             elif name == "STATUS":
                 cur["status"] = value
     return events
@@ -442,6 +452,7 @@ def new_to_compare(vevents: dict) -> dict:
             "start": fmt_date(ev["start"]),
             "end": fmt_date(ev["end_exclusive"]),
             "location": ev["location"],
+            "geo": f"{ev['geo'][0]:.4f};{ev['geo'][1]:.4f}" if ev.get("geo") else "",
             "status": "TENTATIVE" if ev["confidence"] == "tentative" else "CONFIRMED",
         }
     return out
@@ -472,7 +483,7 @@ def diff_calendars(old: dict, new: dict, use_color: bool) -> int:
     added = sorted(new_ids - old_ids, key=lambda u: new[u]["start"])
     removed = sorted(old_ids - new_ids, key=lambda u: old[u]["start"])
     common = new_ids & old_ids
-    fields = ["summary", "start", "end", "location", "status"]
+    fields = ["summary", "start", "end", "location", "geo", "status"]
     changed = []
     for uid in common:
         deltas = [(f, old[uid].get(f, ""), new[uid].get(f, "")) for f in fields

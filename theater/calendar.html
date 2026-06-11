@@ -11,11 +11,11 @@
   }
   *{box-sizing:border-box}
   body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);
-       margin:0;padding:1.2rem clamp(.6rem,3vw,1.5rem) 4rem;max-width:1080px;margin:0 auto}
+       margin:0 auto;padding:1.2rem clamp(.6rem,3vw,1.5rem) 4rem;max-width:1080px}
   h1{font-size:1.45rem;margin:0 0 .15rem}
   .sub{color:var(--dim);margin:0 0 1rem;font-size:.92rem}
 
-  .toolbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:0 0 .9rem}
+  .toolbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:0 0 .8rem}
   .toolbar .spacer{flex:1}
   button,.btn{font:inherit;font-size:.88rem;font-weight:600;color:var(--ink);background:#fff;
        border:1px solid #d1d5db;border-radius:8px;padding:.42rem .7rem;cursor:pointer;text-decoration:none;line-height:1}
@@ -28,38 +28,50 @@
   .seg button:first-child{border-left:0}
   .seg button.active{background:var(--ink);color:#fff}
 
+  /* filter bar */
+  .filters{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:flex-end;background:var(--bg);
+       border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;margin:0 0 1rem}
+  .fgroup{display:flex;flex-direction:column;gap:.35rem}
+  .fgroup>.flabel{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--dim);font-weight:700}
+  .types{display:flex;gap:.9rem;flex-wrap:wrap}
+  .types label{display:flex;align-items:center;gap:.35rem;font-size:.9rem;cursor:pointer;user-select:none}
+  .types input{accent-color:var(--ink);width:1rem;height:1rem}
+  .swatch{width:.7rem;height:.7rem;border-radius:3px;display:inline-block}
+  .swatch.registration{background:var(--reg)} .swatch.audition{background:var(--aud)} .swatch.show{background:var(--show)}
+  .dist{display:flex;align-items:center;gap:.6rem}
+  .dist input[type=text]{width:6.5rem;font:inherit;font-size:.9rem;padding:.4rem .55rem;border:1px solid #d1d5db;border-radius:8px}
+  .dist input[type=range]{width:9rem;accent-color:var(--ink)}
+  #distVal{font-weight:700;font-variant-numeric:tabular-nums;min-width:4.2rem;display:inline-block}
+  #zipNote{font-size:.78rem;color:var(--dim)}
+  #zipNote.err{color:#b91c1c}
+  .countline{font-size:.85rem;color:var(--dim);margin:0 0 .6rem}
+  .clear{font-size:.8rem;color:var(--dim);background:none;border:0;cursor:pointer;text-decoration:underline;padding:0}
+
   .legend{display:flex;gap:1rem;flex-wrap:wrap;color:var(--dim);font-size:.82rem;margin:0 0 .8rem}
   .dot{display:inline-block;width:.7rem;height:.7rem;border-radius:3px;vertical-align:-1px;margin-right:.3rem}
   .dot.registration{background:var(--reg)} .dot.audition{background:var(--aud)} .dot.show{background:var(--show)}
 
-  /* month grid */
   .grid{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--line);gap:1px}
-  .dow{background:#fff;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--dim);
-       font-weight:700;text-align:center;padding:.45rem 0}
+  .dow{background:#fff;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--dim);font-weight:700;text-align:center;padding:.45rem 0}
   .cell{background:#fff;min-height:7.5rem;padding:.3rem .3rem .35rem;display:flex;flex-direction:column;gap:.18rem}
   .cell.out{background:#fbfbfc}
   .cell .num{font-size:.78rem;color:var(--dim);font-weight:600;align-self:flex-end}
   .cell.out .num{opacity:.45}
-  .cell.today .num{background:var(--ink);color:#fff;border-radius:999px;width:1.45rem;height:1.45rem;
-       display:flex;align-items:center;justify-content:center}
-  .chip{font-size:.72rem;line-height:1.2;border-radius:5px;padding:.16rem .34rem;color:#fff;cursor:pointer;
-       white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left:3px solid rgba(0,0,0,.18)}
+  .cell.today .num{background:var(--ink);color:#fff;border-radius:999px;width:1.45rem;height:1.45rem;display:flex;align-items:center;justify-content:center}
+  .chip{font-size:.72rem;line-height:1.2;border-radius:5px;padding:.16rem .34rem;color:#fff;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left:3px solid rgba(0,0,0,.18)}
   .chip.registration{background:var(--reg)} .chip.audition{background:var(--aud)} .chip.show{background:var(--show)}
   .chip.tentative{opacity:.62;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.25) 0 4px,transparent 4px 8px)}
   .more{font-size:.72rem;color:var(--dim);cursor:pointer;font-weight:600}
 
-  /* agenda */
   .agenda h2{font-size:1rem;border-bottom:2px solid #eef0f3;padding-bottom:.3rem;margin:1.4rem 0 .5rem}
   .agenda ul{list-style:none;margin:0;padding:0}
-  .agenda li{display:grid;grid-template-columns:8.5rem 6rem 1fr;gap:.5rem;align-items:baseline;
-       padding:.4rem 0;border-bottom:1px solid #f3f4f6;cursor:pointer}
+  .agenda li{display:grid;grid-template-columns:8.5rem 6rem 1fr;gap:.5rem;align-items:baseline;padding:.4rem 0;border-bottom:1px solid #f3f4f6;cursor:pointer}
   .agenda .date{color:var(--dim);font-variant-numeric:tabular-nums;font-size:.88rem}
-  .badge{font-size:.68rem;text-transform:uppercase;letter-spacing:.03em;font-weight:700;border-radius:5px;
-       padding:.1rem .4rem;color:#fff;text-align:center}
+  .badge{font-size:.68rem;text-transform:uppercase;letter-spacing:.03em;font-weight:700;border-radius:5px;padding:.1rem .4rem;color:#fff;text-align:center}
   .badge.registration{background:var(--reg)} .badge.audition{background:var(--aud)} .badge.show{background:var(--show)}
   .agenda .ttl{font-weight:600}
+  .agenda .mi{color:var(--dim);font-weight:400;font-size:.82rem}
 
-  /* modal */
   .backdrop{position:fixed;inset:0;background:rgba(17,24,39,.45);display:none;align-items:center;justify-content:center;padding:1rem;z-index:20}
   .backdrop.open{display:flex}
   .modal{background:#fff;border-radius:14px;max-width:30rem;width:100%;padding:1.25rem 1.3rem 1.4rem;box-shadow:0 18px 50px rgba(0,0,0,.25)}
@@ -75,7 +87,6 @@
   footer{margin-top:2rem;color:var(--dim);font-size:.8rem;border-top:1px solid #eef0f3;padding-top:1rem}
   @media (max-width:620px){
     .cell{min-height:5.2rem}
-    .dow span.long{display:none}
     .agenda li{grid-template-columns:1fr;gap:.1rem}
     .agenda .badge{justify-self:start}
     #label{min-width:8.5rem;font-size:.98rem}
@@ -86,6 +97,28 @@
 <h1>Metro Phoenix Youth Theater</h1>
 <p class="sub">Registration, auditions &amp; shows for youth-cast theater across the Valley. Reads live from
 <code>phoenix_youth_theater.ics</code>.</p>
+
+<div class="filters">
+  <div class="fgroup">
+    <span class="flabel">Show event types</span>
+    <div class="types" id="typeFilter">
+      <label><input type="checkbox" value="show" checked><span class="swatch show"></span>Performances</label>
+      <label><input type="checkbox" value="audition" checked><span class="swatch audition"></span>Auditions</label>
+      <label><input type="checkbox" value="registration" checked><span class="swatch registration"></span>Camps &amp; registration</label>
+    </div>
+  </div>
+  <div class="fgroup">
+    <span class="flabel">Distance from ZIP</span>
+    <div class="dist">
+      <input type="text" id="zip" inputmode="numeric" maxlength="5" placeholder="e.g. 85281"
+             aria-label="Your ZIP code">
+      <input type="range" id="dist" min="5" max="65" step="5" value="65" aria-label="Maximum distance in miles">
+      <span id="distVal">Any</span>
+    </div>
+    <span id="zipNote">Enter a ZIP and drag to cap by driving-radius (straight-line miles).</span>
+  </div>
+  <button class="clear" id="clearFilters">Reset filters</button>
+</div>
 
 <div class="toolbar">
   <div class="nav">
@@ -102,12 +135,7 @@
   <a class="btn primary" href="phoenix_youth_theater.ics" download>Download .ics</a>
 </div>
 
-<div class="legend">
-  <span><span class="dot registration"></span>registration / camps</span>
-  <span><span class="dot audition"></span>auditions</span>
-  <span><span class="dot show"></span>performances</span>
-  <span style="opacity:.7">hatched = tentative</span>
-</div>
+<p class="countline" id="count">&nbsp;</p>
 
 <div id="msg">Loading calendar&hellip;</div>
 <div id="month" hidden></div>
@@ -119,14 +147,16 @@
 
 <footer>
   Best-effort snapshot generated from each theater's published info &mdash; verify dates against the
-  source link before relying on them. &nbsp;<a href="index.html">List view</a> &middot;
-  <a href="README.md">How it works</a>
+  source link before relying on them. Venue coordinates are approximate; ZIP lookups use the free
+  <a href="https://www.zippopotam.us/" target="_blank" rel="noopener">Zippopotam.us</a> service.
+  &nbsp;<a href="index.html">List view</a> &middot; <a href="README.md">How it works</a>
 </footer>
 
 <script>
 const ICS_URL = "phoenix_youth_theater.ics";
 const TYPES = ["registration","audition","show"];
 
+/* ---------- ICS parsing ---------- */
 function unfold(text){
   const out=[];
   for(const raw of text.replace(/\r\n/g,"\n").split("\n")){
@@ -135,35 +165,30 @@ function unfold(text){
   }
   return out;
 }
-function unesc(v){
-  return v.replace(/\\n/gi,"\n").replace(/\\,/g,",").replace(/\\;/g,";").replace(/\\\\/g,"\\");
-}
-function parseDate(s){ // "20260918" -> local Date at noon (avoids TZ edge cases)
-  const y=+s.slice(0,4), m=+s.slice(4,6), d=+s.slice(6,8);
-  return new Date(y, m-1, d, 12, 0, 0);
-}
-function descField(desc, key){
+function unesc(v){return v.replace(/\\n/gi,"\n").replace(/\\,/g,",").replace(/\\;/g,";").replace(/\\\\/g,"\\");}
+function parseDate(s){return new Date(+s.slice(0,4),+s.slice(4,6)-1,+s.slice(6,8),12,0,0);}
+function descField(desc,key){
   if(!desc) return "";
-  const line = desc.split("\n").find(l => l.toLowerCase().startsWith(key.toLowerCase()+":"));
-  return line ? line.slice(key.length+1).trim() : "";
+  const line=desc.split("\n").find(l=>l.toLowerCase().startsWith(key.toLowerCase()+":"));
+  return line?line.slice(key.length+1).trim():"";
 }
 function parseICS(text){
   const events=[]; let cur=null;
   for(const line of unfold(text)){
     if(line==="BEGIN:VEVENT"){cur={};}
-    else if(line==="END:VEVENT"){ if(cur && cur.dtstart) events.push(buildEvent(cur)); cur=null; }
+    else if(line==="END:VEVENT"){ if(cur&&cur.dtstart) events.push(buildEvent(cur)); cur=null; }
     else if(cur){
       const i=line.indexOf(":"); if(i<0) continue;
       const name=line.slice(0,i).split(";")[0].toUpperCase();
-      const rawVal=line.slice(i+1);
-      const val=unesc(rawVal);
+      const rawVal=line.slice(i+1), val=unesc(rawVal);
       if(name==="UID")cur.uid=val;
       else if(name==="SUMMARY")cur.summary=val;
       else if(name==="DTSTART")cur.dtstart=rawVal.trim();
       else if(name==="DTEND")cur.dtend=rawVal.trim();
       else if(name==="DESCRIPTION")cur.description=val;
-      else if(name==="URL")cur.url=val;
       else if(name==="LOCATION")cur.location=val;
+      else if(name==="GEO")cur.geo=rawVal.trim();
+      else if(name==="URL")cur.url=val;
       else if(name==="STATUS")cur.status=val;
     }
   }
@@ -171,41 +196,98 @@ function parseICS(text){
 }
 function buildEvent(c){
   const start=parseDate(c.dtstart);
-  // DTEND is exclusive for all-day events -> last day is DTEND - 1 day
   let end=start;
   if(c.dtend){ end=parseDate(c.dtend); end.setDate(end.getDate()-1); if(end<start) end=start; }
-  const theater=descField(c.description,"Theater") || "";
+  const theater=descField(c.description,"Theater")||"";
   const typeRaw=(descField(c.description,"Type")||"show").toLowerCase();
   const type=TYPES.includes(typeRaw)?typeRaw:"show";
-  // title: strip leading emoji, "Theater: " prefix, and trailing " (Label)"
   let title=(c.summary||"").replace(/^[^\w(]+/,"").trim();
   if(theater && title.startsWith(theater)) title=title.slice(theater.length).replace(/^:\s*/,"");
   title=title.replace(/\s*\((Show|Audition|Registration)\)\s*$/i,"").trim();
+  let lat=null,lon=null;
+  if(c.geo && c.geo.includes(";")){ const [a,b]=c.geo.split(";"); lat=parseFloat(a); lon=parseFloat(b); }
   return {
     uid:c.uid, title, theater, type, start, end,
     tentative:(c.status||"").toUpperCase()==="TENTATIVE",
     city:descField(c.description,"City"),
+    address:c.location||descField(c.description,"Address"),
     ageCap:descField(c.description,"Cast age cap"),
-    run:descField(c.description,"Run"),
     confidence:descField(c.description,"Confidence"),
     source:c.url||"",
+    lat, lon,
   };
 }
 
-let EVENTS=[];
+/* ---------- distance helpers ---------- */
+function haversineMi(aLat,aLon,bLat,bLon){
+  const R=3958.8, toRad=x=>x*Math.PI/180;
+  const dLat=toRad(bLat-aLat), dLon=toRad(bLon-aLon);
+  const h=Math.sin(dLat/2)**2+Math.cos(toRad(aLat))*Math.cos(toRad(bLat))*Math.sin(dLon/2)**2;
+  return 2*R*Math.asin(Math.sqrt(h));
+}
+const ZIP_CACHE=loadZipCache();
+function loadZipCache(){ try{return JSON.parse(localStorage.getItem("zipCache")||"{}");}catch(e){return {};} }
+function saveZipCache(){ try{localStorage.setItem("zipCache",JSON.stringify(ZIP_CACHE));}catch(e){} }
+// Seed: venue ZIP centroids get added once events load, so local lookups can work offline.
+async function resolveZip(zip){
+  if(ZIP_CACHE[zip]) return ZIP_CACHE[zip];
+  try{
+    const r=await fetch("https://api.zippopotam.us/us/"+zip,{cache:"force-cache"});
+    if(!r.ok) throw new Error("not found");
+    const j=await r.json();
+    const p=j.places&&j.places[0];
+    if(!p) throw new Error("no place");
+    const rec={lat:parseFloat(p.latitude),lon:parseFloat(p.longitude),
+               place:(p["place name"]||"")+", "+(p["state abbreviation"]||"")};
+    ZIP_CACHE[zip]=rec; saveZipCache();
+    return rec;
+  }catch(e){ return null; }
+}
+
+/* ---------- state ---------- */
+let EVENTS=[], VISIBLE=[];
+const FILTER={ types:new Set(TYPES), maxMiles:null, origin:null, originZip:"" };
 let cursor=new Date(); cursor.setDate(1); cursor.setHours(12,0,0,0);
 let mode="month";
 
 const MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"];
-const DOW=[["S","Sun"],["M","Mon"],["T","Tue"],["W","Wed"],["T","Thu"],["F","Fri"],["S","Sat"]];
+const DOW=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 const sameDay=(a,b)=>a.getFullYear()===b.getFullYear()&&a.getMonth()===b.getMonth()&&a.getDate()===b.getDate();
 const startOfDay=d=>{const x=new Date(d);x.setHours(0,0,0,0);return x;};
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
 function fmtRange(s,e){
   const o={month:"short",day:"numeric"};
   if(sameDay(s,e)) return s.toLocaleDateString(undefined,{weekday:"short",...o,year:"numeric"});
   return s.toLocaleDateString(undefined,{weekday:"short",...o})+" – "+e.toLocaleDateString(undefined,{...o,year:"numeric"});
 }
+function distOf(e){
+  if(!FILTER.origin || e.lat==null) return null;
+  return haversineMi(FILTER.origin.lat,FILTER.origin.lon,e.lat,e.lon);
+}
 
+/* ---------- filtering ---------- */
+function passes(e){
+  if(!FILTER.types.has(e.type)) return false;
+  if(FILTER.maxMiles!=null && FILTER.origin){
+    const d=distOf(e);
+    if(d==null || d>FILTER.maxMiles) return false;
+  }
+  return true;
+}
+function applyFilters(){
+  VISIBLE=EVENTS.filter(passes);
+  updateCount();
+  if(mode==="month") renderMonth(); else renderAgenda();
+}
+function updateCount(){
+  const c=document.getElementById("count");
+  let txt=`Showing ${VISIBLE.length} of ${EVENTS.length} events`;
+  if(FILTER.origin && FILTER.maxMiles!=null) txt+=` within ${FILTER.maxMiles} mi of ${FILTER.origin.place||FILTER.originZip}`;
+  else if(FILTER.origin) txt+=` · distances from ${FILTER.origin.place||FILTER.originZip}`;
+  c.textContent=txt;
+}
+
+/* ---------- views ---------- */
 function renderMonth(){
   const y=cursor.getFullYear(), m=cursor.getMonth();
   document.getElementById("label").textContent=MONTHS[m]+" "+y;
@@ -213,68 +295,64 @@ function renderMonth(){
   const startGrid=new Date(first); startGrid.setDate(1-first.getDay());
   const today=new Date();
   let html='<div class="grid">';
-  for(const [s,l] of DOW) html+=`<div class="dow"><span class="short">${s}</span><span class="long" hidden>${l}</span></div>`;
+  for(const d of DOW) html+=`<div class="dow">${d}</div>`;
   for(let i=0;i<42;i++){
-    const day=new Date(startGrid); day.setDate(startGrid.getDate()+i); day.setHours(12,0,0,0);
-    const out = day.getMonth()!==m;
-    const isToday = sameDay(day,today);
-    const dayEvents=EVENTS.filter(e=>startOfDay(day)>=startOfDay(e.start)&&startOfDay(day)<=startOfDay(e.end))
+    const day=new Date(startGrid); day.setDate(startGrid.getDate()+i); day.setHours(12);
+    const out=day.getMonth()!==m, isToday=sameDay(day,today);
+    const dayEvents=VISIBLE.filter(e=>startOfDay(day)>=startOfDay(e.start)&&startOfDay(day)<=startOfDay(e.end))
                           .sort((a,b)=>a.type.localeCompare(b.type)||a.title.localeCompare(b.title));
-    html+=`<div class="cell${out?" out":""}${isToday?" today":""}">`;
-    html+=`<div class="num">${day.getDate()}</div>`;
+    html+=`<div class="cell${out?" out":""}${isToday?" today":""}"><div class="num">${day.getDate()}</div>`;
     const max=3;
     dayEvents.slice(0,max).forEach(e=>{
       html+=`<div class="chip ${e.type}${e.tentative?" tentative":""}" data-uid="${e.uid}" title="${esc(e.theater+": "+e.title)}">${esc(e.title)}</div>`;
     });
-    if(dayEvents.length>max) html+=`<div class="more" data-day="${day.toISOString()}">+${dayEvents.length-max} more</div>`;
+    if(dayEvents.length>max) html+=`<div class="more">+${dayEvents.length-max} more</div>`;
     html+="</div>";
   }
-  html+="</div>";
-  const c=document.getElementById("month"); c.innerHTML=html;
-  // stop showing the single-letter weekday duplication; show long labels where wide enough
-  if(window.matchMedia("(min-width:621px)").matches){
-    c.querySelectorAll(".dow .short").forEach(x=>x.hidden=true);
-    c.querySelectorAll(".dow .long").forEach(x=>x.hidden=false);
-  }
+  document.getElementById("month").innerHTML=html+"</div>";
 }
-
 function renderAgenda(){
   document.getElementById("label").textContent="Upcoming";
   const today=startOfDay(new Date());
-  const up=EVENTS.filter(e=>startOfDay(e.end)>=today).sort((a,b)=>a.start-b.start);
+  const up=VISIBLE.filter(e=>startOfDay(e.end)>=today).sort((a,b)=>a.start-b.start);
   const groups={};
-  up.forEach(e=>{ const k=e.start.getFullYear()+"-"+e.start.getMonth(); (groups[k]=groups[k]||[]).push(e); });
+  up.forEach(e=>{const k=e.start.getFullYear()+"-"+e.start.getMonth();(groups[k]=groups[k]||[]).push(e);});
   let html="";
-  if(!up.length) html='<p style="color:var(--dim)">No upcoming events in the calendar.</p>';
+  if(!up.length) html='<p style="color:var(--dim)">No events match the current filters.</p>';
   Object.keys(groups).forEach(k=>{
     const [y,m]=k.split("-").map(Number);
     html+=`<h2>${MONTHS[m]} ${y}</h2><ul>`;
     groups[k].forEach(e=>{
+      const d=distOf(e);
+      const mi=d!=null?` <span class="mi">· ${d<10?d.toFixed(1):Math.round(d)} mi</span>`:"";
       html+=`<li data-uid="${e.uid}"><span class="date">${fmtRange(e.start,e.end).replace(/, \d{4}$/,"")}</span>`
-          +`<span class="badge ${e.type}">${e.type}</span>`
-          +`<span class="ttl">${esc(e.theater)}: ${esc(e.title)}${e.tentative?' <span class="status">· tentative</span>':''}</span></li>`;
+          +`<span class="badge ${e.type}">${e.type==="registration"?"camp":e.type}</span>`
+          +`<span class="ttl">${esc(e.theater)}: ${esc(e.title)}${e.tentative?' <span class="status">· tentative</span>':''}${mi}</span></li>`;
     });
     html+="</ul>";
   });
   document.getElementById("agenda").innerHTML=html;
 }
 
-function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
-
+/* ---------- modal ---------- */
 function openModal(uid){
   const e=EVENTS.find(x=>x.uid===uid); if(!e) return;
   const rows=[];
-  rows.push(["Theater", esc(e.theater)+(e.city?` <span style="color:var(--dim)">(${esc(e.city)})</span>`:"")]);
-  rows.push(["Type", e.type.charAt(0).toUpperCase()+e.type.slice(1)]);
+  rows.push(["Theater", esc(e.theater)]);
+  rows.push(["Type", e.type==="registration"?"Camp / registration":e.type.charAt(0).toUpperCase()+e.type.slice(1)]);
+  if(e.address){
+    const q=encodeURIComponent(e.address);
+    rows.push(["Location", `<a href="https://maps.google.com/?q=${q}" target="_blank" rel="noopener">${esc(e.address)} &#8599;</a>`]);
+  }
+  const d=distOf(e);
+  if(d!=null) rows.push(["Distance", `${d<10?d.toFixed(1):Math.round(d)} mi from ${esc(FILTER.origin.place||FILTER.originZip)}`]);
   if(e.ageCap) rows.push(["Cast age cap", esc(e.ageCap)]);
   if(e.tentative) rows.push(["Status", '<span class="status">Tentative — verify date</span>']);
-  const src = e.source?`<a href="${esc(e.source)}" target="_blank" rel="noopener">Open source &#8599;</a>`:"—";
+  const src=e.source?`<a href="${esc(e.source)}" target="_blank" rel="noopener">Open source &#8599;</a>`:"—";
   document.getElementById("modal").innerHTML=
     `<button class="close" aria-label="Close">&times;</button>`
-    +`<h3>${esc(e.title)}</h3>`
-    +`<p class="when">${fmtRange(e.start,e.end)}</p>`
-    +`<dl>${rows.map(r=>`<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join("")}</dl>`
-    +`<div>${src}</div>`;
+    +`<h3>${esc(e.title)}</h3><p class="when">${fmtRange(e.start,e.end)}</p>`
+    +`<dl>${rows.map(r=>`<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join("")}</dl><div>${src}</div>`;
   document.getElementById("backdrop").classList.add("open");
   document.querySelector("#modal .close").onclick=closeModal;
 }
@@ -284,36 +362,82 @@ function setMode(next){
   mode=next;
   document.getElementById("viewMonth").classList.toggle("active",mode==="month");
   document.getElementById("viewAgenda").classList.toggle("active",mode==="agenda");
-  document.getElementById("month").hidden = mode!=="month";
-  document.getElementById("agenda").hidden = mode!=="agenda";
-  document.querySelectorAll(".nav button").forEach(b=>b.style.visibility = mode==="month"?"visible":"hidden");
+  document.getElementById("month").hidden=mode!=="month";
+  document.getElementById("agenda").hidden=mode!=="agenda";
+  document.querySelectorAll(".nav button").forEach(b=>b.style.visibility=mode==="month"?"visible":"hidden");
   if(mode==="month") renderMonth(); else renderAgenda();
 }
 
+/* ---------- filter controls ---------- */
+function distLabel(v){ return v>=65 ? "Any" : v+" mi"; }
+async function recomputeDistance(){
+  const zip=document.getElementById("zip").value.trim();
+  const slider=+document.getElementById("dist").value;
+  FILTER.originZip=zip;
+  FILTER.maxMiles = slider>=65 ? null : slider;
+  const note=document.getElementById("zipNote");
+  if(/^\d{5}$/.test(zip)){
+    note.classList.remove("err"); note.textContent="Locating "+zip+"…";
+    const rec=await resolveZip(zip);
+    if(rec){ FILTER.origin=rec; note.textContent="Distances from "+(rec.place||zip)+"."; }
+    else { FILTER.origin=null; note.classList.add("err"); note.textContent="Couldn't find ZIP "+zip+" (check it, or you may be offline)."; }
+  }else{
+    FILTER.origin=null;
+    note.classList.remove("err");
+    note.textContent = zip ? "Enter a full 5-digit ZIP." : "Enter a ZIP and drag to cap by radius (straight-line miles).";
+  }
+  applyFilters();
+}
+
+document.getElementById("typeFilter").addEventListener("change",e=>{
+  FILTER.types=new Set([...document.querySelectorAll("#typeFilter input:checked")].map(i=>i.value));
+  applyFilters();
+});
+document.getElementById("dist").addEventListener("input",e=>{
+  document.getElementById("distVal").textContent=distLabel(+e.target.value);
+});
+document.getElementById("dist").addEventListener("change",recomputeDistance);
+let zipTimer;
+document.getElementById("zip").addEventListener("input",()=>{clearTimeout(zipTimer);zipTimer=setTimeout(recomputeDistance,450);});
+document.getElementById("clearFilters").addEventListener("click",()=>{
+  document.querySelectorAll("#typeFilter input").forEach(i=>i.checked=true);
+  document.getElementById("zip").value=""; document.getElementById("dist").value=65;
+  document.getElementById("distVal").textContent="Any";
+  FILTER.types=new Set(TYPES); FILTER.maxMiles=null; FILTER.origin=null; FILTER.originZip="";
+  document.getElementById("zipNote").classList.remove("err");
+  document.getElementById("zipNote").textContent="Enter a ZIP and drag to cap by radius (straight-line miles).";
+  applyFilters();
+});
+
 document.getElementById("prev").onclick=()=>{cursor.setMonth(cursor.getMonth()-1);renderMonth();};
 document.getElementById("next").onclick=()=>{cursor.setMonth(cursor.getMonth()+1);renderMonth();};
-document.getElementById("today").onclick=()=>{cursor=new Date();cursor.setDate(1);cursor.setHours(12,0,0,0);renderMonth();};
+document.getElementById("today").onclick=()=>{cursor=new Date();cursor.setDate(1);cursor.setHours(12);renderMonth();};
 document.getElementById("viewMonth").onclick=()=>setMode("month");
 document.getElementById("viewAgenda").onclick=()=>setMode("agenda");
 document.getElementById("backdrop").onclick=ev=>{if(ev.target.id==="backdrop")closeModal();};
 document.addEventListener("keydown",ev=>{if(ev.key==="Escape")closeModal();});
 document.body.addEventListener("click",ev=>{
   const chip=ev.target.closest("[data-uid]"); if(chip){openModal(chip.getAttribute("data-uid"));return;}
-  const more=ev.target.closest(".more"); if(more){ // jump agenda to that day? simplest: open first hidden event's day via agenda
-    setMode("agenda");
-  }
+  if(ev.target.closest(".more")) setMode("agenda");
 });
 
 fetch(ICS_URL,{cache:"no-store"})
   .then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.text(); })
   .then(text=>{
     EVENTS=parseICS(text);
+    // seed ZIP cache with venue centroids so nearby lookups work even offline
+    EVENTS.forEach(e=>{
+      const z=(e.address.match(/\b(\d{5})\b/)||[])[1];
+      if(z && e.lat!=null && !ZIP_CACHE[z]) ZIP_CACHE[z]={lat:e.lat,lon:e.lon,place:e.city+", AZ"};
+    });
+    saveZipCache();
+    VISIBLE=EVENTS.slice();
     document.getElementById("msg").hidden=true;
     document.getElementById("month").hidden=false;
-    // open on the month of the next upcoming event for immediate content
     const today=startOfDay(new Date());
     const upcoming=EVENTS.filter(e=>startOfDay(e.end)>=today).sort((a,b)=>a.start-b.start)[0];
-    if(upcoming){ cursor=new Date(upcoming.start.getFullYear(),upcoming.start.getMonth(),1,12); }
+    if(upcoming) cursor=new Date(upcoming.start.getFullYear(),upcoming.start.getMonth(),1,12);
+    updateCount();
     setMode("month");
   })
   .catch(err=>{

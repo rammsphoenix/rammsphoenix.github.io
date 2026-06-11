@@ -16,11 +16,12 @@ DTSTART;VALUE=DATE:20260601
 DTEND;VALUE=DATE:20260613
 SUMMARY:📝 Rising Youth Theatre: Summer Camp 1: Environment (2-week) (Reg
  istration)
-LOCATION:Phoenix Center for the Arts\, Phoenix\, AZ
+LOCATION:1202 N 3rd St\, Phoenix\, AZ 85004
 DESCRIPTION:Theater: Rising Youth Theatre\nType: Registration\nCity: Phoeni
- x\nCast age cap: 18\nRun: 2026-06-01 - 2026-06-12\nConfidence: confirmed\n
- Theater site: https://risingyouththeatre.org\nSource: https://risingyoutht
- heatre.org/camp
+ x\nAddress: 1202 N 3rd St\, Phoenix\, AZ 85004\nCast age cap: 18\nRun: 202
+ 6-06-01 - 2026-06-12\nConfidence: confirmed\nTheater site: https://risingy
+ ouththeatre.org\nSource: https://risingyouththeatre.org/camp
+GEO:33.4615;-112.0697
 URL:https://risingyouththeatre.org/camp
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -32,11 +33,12 @@ DTSTART;VALUE=DATE:20260601
 DTEND;VALUE=DATE:20260613
 SUMMARY:📝 Spotlight Youth Theatre: Summer Camp 1: The Ogre and the Donke
  y (Registration)
-LOCATION:10620 N 43rd Ave\, Glendale\, AZ
+LOCATION:10620 N 43rd Ave\, Suite 12\, Glendale\, AZ 85304
 DESCRIPTION:Theater: Spotlight Youth Theatre\nType: Registration\nCity: Gle
- ndale\nCast age cap: 19\nRun: 2026-06-01 - 2026-06-12\nConfidence: confirm
- ed\nTheater site: https://sytaz.org\nSource: https://sytaz.org/summer-camp
- s-2026
+ ndale\nAddress: 10620 N 43rd Ave\, Suite 12\, Glendale\, AZ 85304\nCast ag
+ e cap: 19\nRun: 2026-06-01 - 2026-06-12\nConfidence: confirmed\nTheater si
+ te: https://sytaz.org\nSource: https://sytaz.org/summer-camps-2026
+GEO:33.5836;-112.1529
 URL:https://sytaz.org/summer-camps-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -48,11 +50,12 @@ DTSTART;VALUE=DATE:20260608
 DTEND;VALUE=DATE:20260620
 SUMMARY:📝 Queen Creek Performing Arts Center: Advanced Youth Drama Camp 
  (Registration)
-LOCATION:Queen Creek\, AZ
+LOCATION:22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
 DESCRIPTION:Theater: Queen Creek Performing Arts Center\nType: Registration
- \nCity: Queen Creek\nCast age cap: 18\nRun: 2026-06-08 - 2026-06-19\nConfi
- dence: confirmed\nTheater site: https://qcpac.com\nSource: https://qcpac.c
- om/camps-workshops/
+ \nCity: Queen Creek\nAddress: 22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
+ \nCast age cap: 18\nRun: 2026-06-08 - 2026-06-19\nConfidence: confirmed\nT
+ heater site: https://qcpac.com\nSource: https://qcpac.com/camps-workshops/
+GEO:33.2465;-111.6049
 URL:https://qcpac.com/camps-workshops/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -64,11 +67,12 @@ DTSTART;VALUE=DATE:20260608
 DTEND;VALUE=DATE:20260613
 SUMMARY:📝 Greasepaint Youtheatre: Summer Camp: Broadway Heroes (Registra
  tion)
-LOCATION:Scottsdale\, AZ
+LOCATION:7020 E 2nd St\, Scottsdale\, AZ 85251
 DESCRIPTION:Theater: Greasepaint Youtheatre\nType: Registration\nCity: Scot
- tsdale\nCast age cap: 19\nRun: 2026-06-08 - 2026-06-12\nConfidence: confir
- med\nTheater site: https://greasepaint.org\nSource: https://greasepaint.or
- g/classes/
+ tsdale\nAddress: 7020 E 2nd St\, Scottsdale\, AZ 85251\nCast age cap: 19\n
+ Run: 2026-06-08 - 2026-06-12\nConfidence: confirmed\nTheater site: https:/
+ /greasepaint.org\nSource: https://greasepaint.org/classes/
+GEO:33.4914;-111.9298
 URL:https://greasepaint.org/classes/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -80,10 +84,12 @@ DTSTART;VALUE=DATE:20260611
 DTEND;VALUE=DATE:20260622
 SUMMARY:🎫 East Valley Children's Theatre: Charlotte's Web (the musical) 
  (Show)
-LOCATION:Mesa\, AZ
+LOCATION:4501 E Main St\, Mesa\, AZ 85205
 DESCRIPTION:Theater: East Valley Children's Theatre\nType: Show\nCity: Mesa
- \nCast age cap: 18\nRun: 2026-06-11 - 2026-06-21\nConfidence: confirmed\nT
- heater site: https://evct.org\nSource: https://evct.org/productions/
+ \nAddress: 4501 E Main St\, Mesa\, AZ 85205\nCast age cap: 18\nRun: 2026-0
+ 6-11 - 2026-06-21\nConfidence: confirmed\nTheater site: https://evct.org\n
+ Source: https://evct.org/productions/
+GEO:33.4154;-111.7345
 URL:https://evct.org/productions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -95,11 +101,13 @@ DTSTART;VALUE=DATE:20260612
 DTEND;VALUE=DATE:20260614
 SUMMARY:🎭 Queen Creek Performing Arts Center: Disney's Camp Rock - Audit
  ions (Audition)
-LOCATION:Queen Creek\, AZ
+LOCATION:22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
 DESCRIPTION:Theater: Queen Creek Performing Arts Center\nType: Audition\nCi
- ty: Queen Creek\nCast age cap: 18\nRun: 2026-06-12 - 2026-06-13\nConfidenc
- e: confirmed\nTheater site: https://qcpac.com\nSource: https://qcpac.com/c
- t-auditions-info/auditions/
+ ty: Queen Creek\nAddress: 22149 E Ocotillo Rd\, Queen Creek\, AZ 85142\nCa
+ st age cap: 18\nRun: 2026-06-12 - 2026-06-13\nConfidence: confirmed\nTheat
+ er site: https://qcpac.com\nSource: https://qcpac.com/ct-auditions-info/au
+ ditions/
+GEO:33.2465;-111.6049
 URL:https://qcpac.com/ct-auditions-info/auditions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -111,11 +119,12 @@ DTSTART;VALUE=DATE:20260615
 DTEND;VALUE=DATE:20260620
 SUMMARY:📝 Greasepaint Youtheatre: Summer Camp: Broadway Villains (Regist
  ration)
-LOCATION:Scottsdale\, AZ
+LOCATION:7020 E 2nd St\, Scottsdale\, AZ 85251
 DESCRIPTION:Theater: Greasepaint Youtheatre\nType: Registration\nCity: Scot
- tsdale\nCast age cap: 19\nRun: 2026-06-15 - 2026-06-19\nConfidence: confir
- med\nTheater site: https://greasepaint.org\nSource: https://greasepaint.or
- g/classes/
+ tsdale\nAddress: 7020 E 2nd St\, Scottsdale\, AZ 85251\nCast age cap: 19\n
+ Run: 2026-06-15 - 2026-06-19\nConfidence: confirmed\nTheater site: https:/
+ /greasepaint.org\nSource: https://greasepaint.org/classes/
+GEO:33.4914;-111.9298
 URL:https://greasepaint.org/classes/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -127,11 +136,12 @@ DTSTART;VALUE=DATE:20260615
 DTEND;VALUE=DATE:20260627
 SUMMARY:📝 Rising Youth Theatre: Summer Camp 2: Friendship & Technology (
  2-week) (Registration)
-LOCATION:Phoenix Center for the Arts\, Phoenix\, AZ
+LOCATION:1202 N 3rd St\, Phoenix\, AZ 85004
 DESCRIPTION:Theater: Rising Youth Theatre\nType: Registration\nCity: Phoeni
- x\nCast age cap: 18\nRun: 2026-06-15 - 2026-06-26\nConfidence: confirmed\n
- Theater site: https://risingyouththeatre.org\nSource: https://risingyoutht
- heatre.org/camp
+ x\nAddress: 1202 N 3rd St\, Phoenix\, AZ 85004\nCast age cap: 18\nRun: 202
+ 6-06-15 - 2026-06-26\nConfidence: confirmed\nTheater site: https://risingy
+ ouththeatre.org\nSource: https://risingyouththeatre.org/camp
+GEO:33.4615;-112.0697
 URL:https://risingyouththeatre.org/camp
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -143,11 +153,12 @@ DTSTART;VALUE=DATE:20260615
 DTEND;VALUE=DATE:20260620
 SUMMARY:📝 Queen Creek Performing Arts Center: Sizzlin' Summer Youth Dram
  a Camp (Session 2) (Registration)
-LOCATION:Queen Creek\, AZ
+LOCATION:22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
 DESCRIPTION:Theater: Queen Creek Performing Arts Center\nType: Registration
- \nCity: Queen Creek\nCast age cap: 18\nRun: 2026-06-15 - 2026-06-19\nConfi
- dence: confirmed\nTheater site: https://qcpac.com\nSource: https://qcpac.c
- om/camps-workshops/
+ \nCity: Queen Creek\nAddress: 22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
+ \nCast age cap: 18\nRun: 2026-06-15 - 2026-06-19\nConfidence: confirmed\nT
+ heater site: https://qcpac.com\nSource: https://qcpac.com/camps-workshops/
+GEO:33.2465;-111.6049
 URL:https://qcpac.com/camps-workshops/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -159,10 +170,12 @@ DTSTART;VALUE=DATE:20260615
 DTEND;VALUE=DATE:20260616
 SUMMARY:📝 East Valley Children's Theatre: Musical Theatre Summer Camp (2
  -week) (Registration)
-LOCATION:Mesa\, AZ
+LOCATION:4501 E Main St\, Mesa\, AZ 85205
 DESCRIPTION:Theater: East Valley Children's Theatre\nType: Registration\nCi
- ty: Mesa\nCast age cap: 18\nConfidence: tentative\nTheater site: https://e
- vct.org\nSource: https://evct.org/calendar/
+ ty: Mesa\nAddress: 4501 E Main St\, Mesa\, AZ 85205\nCast age cap: 18\nCon
+ fidence: tentative\nTheater site: https://evct.org\nSource: https://evct.o
+ rg/calendar/
+GEO:33.4154;-111.7345
 URL:https://evct.org/calendar/
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
@@ -174,11 +187,12 @@ DTSTART;VALUE=DATE:20260615
 DTEND;VALUE=DATE:20260627
 SUMMARY:📝 Starlight Community Theater: Camp Rising Star: Alice in Wonder
  land Jr. (ages 6-14) (Registration)
-LOCATION:Phoenix\, AZ
+LOCATION:15205 N 23rd Ln\, Phoenix\, AZ 85023
 DESCRIPTION:Theater: Starlight Community Theater\nType: Registration\nCity:
-  Phoenix\nRun: 2026-06-15 - 2026-06-26\nConfidence: confirmed\nTheater sit
- e: https://www.starlightcommunitytheater.com\nSource: https://www.starligh
- tcommunitytheater.com
+  Phoenix\nAddress: 15205 N 23rd Ln\, Phoenix\, AZ 85023\nRun: 2026-06-15 -
+  2026-06-26\nConfidence: confirmed\nTheater site: https://www.starlightcom
+ munitytheater.com\nSource: https://www.starlightcommunitytheater.com
+GEO:33.6232;-112.1091
 URL:https://www.starlightcommunitytheater.com
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -190,11 +204,12 @@ DTSTART;VALUE=DATE:20260615
 DTEND;VALUE=DATE:20260627
 SUMMARY:📝 Spotlight Youth Theatre: Summer Camp 2: Hamleton - A Rap Parod
  y (Registration)
-LOCATION:10620 N 43rd Ave\, Glendale\, AZ
+LOCATION:10620 N 43rd Ave\, Suite 12\, Glendale\, AZ 85304
 DESCRIPTION:Theater: Spotlight Youth Theatre\nType: Registration\nCity: Gle
- ndale\nCast age cap: 19\nRun: 2026-06-15 - 2026-06-26\nConfidence: confirm
- ed\nTheater site: https://sytaz.org\nSource: https://sytaz.org/summer-camp
- s-2026
+ ndale\nAddress: 10620 N 43rd Ave\, Suite 12\, Glendale\, AZ 85304\nCast ag
+ e cap: 19\nRun: 2026-06-15 - 2026-06-26\nConfidence: confirmed\nTheater si
+ te: https://sytaz.org\nSource: https://sytaz.org/summer-camps-2026
+GEO:33.5836;-112.1529
 URL:https://sytaz.org/summer-camps-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -205,10 +220,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20260615
 DTEND;VALUE=DATE:20260616
 SUMMARY:🎫 Spotlight Youth Theatre: GOBIES (end-of-season awards) (Show)
-LOCATION:10620 N 43rd Ave\, Glendale\, AZ
-DESCRIPTION:Theater: Spotlight Youth Theatre\nType: Show\nCity: Glendale\nC
- ast age cap: 19\nConfidence: confirmed\nTheater site: https://sytaz.org\nS
- ource: https://sytaz.org/2025-2026-season
+LOCATION:10620 N 43rd Ave\, Suite 12\, Glendale\, AZ 85304
+DESCRIPTION:Theater: Spotlight Youth Theatre\nType: Show\nCity: Glendale\nA
+ ddress: 10620 N 43rd Ave\, Suite 12\, Glendale\, AZ 85304\nCast age cap: 1
+ 9\nConfidence: confirmed\nTheater site: https://sytaz.org\nSource: https:/
+ /sytaz.org/2025-2026-season
+GEO:33.5836;-112.1529
 URL:https://sytaz.org/2025-2026-season
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -219,10 +236,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20260616
 DTEND;VALUE=DATE:20260617
 SUMMARY:🎫 East Valley Children's Theatre: EVCT Cabaret 2026 (Show)
-LOCATION:Mesa\, AZ
+LOCATION:4501 E Main St\, Mesa\, AZ 85205
 DESCRIPTION:Theater: East Valley Children's Theatre\nType: Show\nCity: Mesa
- \nCast age cap: 18\nConfidence: confirmed\nTheater site: https://evct.org\
- nSource: https://evct.org/calendar/
+ \nAddress: 4501 E Main St\, Mesa\, AZ 85205\nCast age cap: 18\nConfidence:
+  confirmed\nTheater site: https://evct.org\nSource: https://evct.org/calen
+ dar/
+GEO:33.4154;-111.7345
 URL:https://evct.org/calendar/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -233,10 +252,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20260616
 DTEND;VALUE=DATE:20260617
 SUMMARY:🎭 Valley Youth Theatre: Matilda The Musical (Audition)
-LOCATION:525 N 1st St\, Phoenix\, AZ
-DESCRIPTION:Theater: Valley Youth Theatre\nType: Audition\nCity: Phoenix\nC
- ast age cap: 19\nConfidence: confirmed\nTheater site: https://vyt.com\nSou
- rce: https://vyt.com/section/auditions
+LOCATION:525 N 1st St\, Phoenix\, AZ 85004
+DESCRIPTION:Theater: Valley Youth Theatre\nType: Audition\nCity: Phoenix\nA
+ ddress: 525 N 1st St\, Phoenix\, AZ 85004\nCast age cap: 19\nConfidence: c
+ onfirmed\nTheater site: https://vyt.com\nSource: https://vyt.com/section/a
+ uditions
+GEO:33.4543;-112.0722
 URL:https://vyt.com/section/auditions
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -247,10 +268,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20260618
 DTEND;VALUE=DATE:20260627
 SUMMARY:🎫 Actors Youth Theatre: Seussical Jr. (Show)
-LOCATION:Gilbert\, AZ
-DESCRIPTION:Theater: Actors Youth Theatre\nType: Show\nCity: Gilbert\nCast 
- age cap: 18\nRun: 2026-06-18 - 2026-06-26\nConfidence: confirmed\nTheater 
- site: https://www.aytaz.org\nSource: https://www.aytaz.org/
+LOCATION:861 N Higley Rd\, Suite 105\, Gilbert\, AZ 85234
+DESCRIPTION:Theater: Actors Youth Theatre\nType: Show\nCity: Gilbert\nAddre
+ ss: 861 N Higley Rd\, Suite 105\, Gilbert\, AZ 85234\nCast age cap: 18\nRu
+ n: 2026-06-18 - 2026-06-26\nConfidence: confirmed\nTheater site: https://w
+ ww.aytaz.org\nSource: https://www.aytaz.org/
+GEO:33.3659;-111.7200
 URL:https://www.aytaz.org/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -262,10 +285,12 @@ DTSTART;VALUE=DATE:20260620
 DTEND;VALUE=DATE:20260621
 SUMMARY:🎭 Queen Creek Performing Arts Center: Disney's Camp Rock - Callb
  acks (Audition)
-LOCATION:Queen Creek\, AZ
+LOCATION:22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
 DESCRIPTION:Theater: Queen Creek Performing Arts Center\nType: Audition\nCi
- ty: Queen Creek\nCast age cap: 18\nConfidence: confirmed\nTheater site: ht
- tps://qcpac.com\nSource: https://qcpac.com/ct-auditions-info/auditions/
+ ty: Queen Creek\nAddress: 22149 E Ocotillo Rd\, Queen Creek\, AZ 85142\nCa
+ st age cap: 18\nConfidence: confirmed\nTheater site: https://qcpac.com\nSo
+ urce: https://qcpac.com/ct-auditions-info/auditions/
+GEO:33.2465;-111.6049
 URL:https://qcpac.com/ct-auditions-info/auditions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -277,11 +302,12 @@ DTSTART;VALUE=DATE:20260622
 DTEND;VALUE=DATE:20260627
 SUMMARY:📝 Greasepaint Youtheatre: Summer Camp: Improv (ages 10-16) (Regi
  stration)
-LOCATION:Scottsdale\, AZ
+LOCATION:7020 E 2nd St\, Scottsdale\, AZ 85251
 DESCRIPTION:Theater: Greasepaint Youtheatre\nType: Registration\nCity: Scot
- tsdale\nCast age cap: 19\nRun: 2026-06-22 - 2026-06-26\nConfidence: confir
- med\nTheater site: https://greasepaint.org\nSource: https://greasepaint.or
- g/classes/
+ tsdale\nAddress: 7020 E 2nd St\, Scottsdale\, AZ 85251\nCast age cap: 19\n
+ Run: 2026-06-22 - 2026-06-26\nConfidence: confirmed\nTheater site: https:/
+ /greasepaint.org\nSource: https://greasepaint.org/classes/
+GEO:33.4914;-111.9298
 URL:https://greasepaint.org/classes/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -293,11 +319,12 @@ DTSTART;VALUE=DATE:20260626
 DTEND;VALUE=DATE:20260630
 SUMMARY:🎫 Queen Creek Performing Arts Center: Shrek the Musical (ages 7-
  adult) (Show)
-LOCATION:Queen Creek\, AZ
+LOCATION:22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
 DESCRIPTION:Theater: Queen Creek Performing Arts Center\nType: Show\nCity: 
- Queen Creek\nCast age cap: 18\nRun: 2026-06-26 - 2026-06-29\nConfidence: c
- onfirmed\nTheater site: https://qcpac.com\nSource: https://qcpac.com/famil
- y-theatre-series/
+ Queen Creek\nAddress: 22149 E Ocotillo Rd\, Queen Creek\, AZ 85142\nCast a
+ ge cap: 18\nRun: 2026-06-26 - 2026-06-29\nConfidence: confirmed\nTheater s
+ ite: https://qcpac.com\nSource: https://qcpac.com/family-theatre-series/
+GEO:33.2465;-111.6049
 URL:https://qcpac.com/family-theatre-series/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -309,11 +336,13 @@ DTSTART;VALUE=DATE:20260706
 DTEND;VALUE=DATE:20260725
 SUMMARY:📝 Fountain Hills Theater (Youth): Disney's Aladdin Kids - Perfor
  mance Camp (Registration)
-LOCATION:Fountain Hills\, AZ
+LOCATION:11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268
 DESCRIPTION:Theater: Fountain Hills Theater (Youth)\nType: Registration\nCi
- ty: Fountain Hills\nCast age cap: 19\nRun: 2026-07-06 - 2026-07-24\nConfid
- ence: confirmed\nTheater site: https://fhtaz.org\nSource: https://app.arts
- -people.com/index.php?class=fht
+ ty: Fountain Hills\nAddress: 11445 N Saguaro Blvd\, Fountain Hills\, AZ 85
+ 268\nCast age cap: 19\nRun: 2026-07-06 - 2026-07-24\nConfidence: confirmed
+ \nTheater site: https://fhtaz.org\nSource: https://app.arts-people.com/ind
+ ex.php?class=fht
+GEO:33.5911;-111.7061
 URL:https://app.arts-people.com/index.php?class=fht
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -325,11 +354,12 @@ DTSTART;VALUE=DATE:20260706
 DTEND;VALUE=DATE:20260718
 SUMMARY:📝 Spotlight Youth Theatre: Summer Camp 3: SYT Pop - Demon Hunter
  s (Registration)
-LOCATION:10620 N 43rd Ave\, Glendale\, AZ
+LOCATION:10620 N 43rd Ave\, Suite 12\, Glendale\, AZ 85304
 DESCRIPTION:Theater: Spotlight Youth Theatre\nType: Registration\nCity: Gle
- ndale\nCast age cap: 19\nRun: 2026-07-06 - 2026-07-17\nConfidence: confirm
- ed\nTheater site: https://sytaz.org\nSource: https://sytaz.org/summer-camp
- s-2026
+ ndale\nAddress: 10620 N 43rd Ave\, Suite 12\, Glendale\, AZ 85304\nCast ag
+ e cap: 19\nRun: 2026-07-06 - 2026-07-17\nConfidence: confirmed\nTheater si
+ te: https://sytaz.org\nSource: https://sytaz.org/summer-camps-2026
+GEO:33.5836;-112.1529
 URL:https://sytaz.org/summer-camps-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -341,10 +371,12 @@ DTSTART;VALUE=DATE:20260706
 DTEND;VALUE=DATE:20260718
 SUMMARY:📝 Valley Youth Theatre: Summer Camp (2-Week Session) (Registrati
  on)
-LOCATION:525 N 1st St\, Phoenix\, AZ
+LOCATION:525 N 1st St\, Phoenix\, AZ 85004
 DESCRIPTION:Theater: Valley Youth Theatre\nType: Registration\nCity: Phoeni
- x\nCast age cap: 19\nRun: 2026-07-06 - 2026-07-17\nConfidence: confirmed\n
- Theater site: https://vyt.com\nSource: https://vyt.com/section/education
+ x\nAddress: 525 N 1st St\, Phoenix\, AZ 85004\nCast age cap: 19\nRun: 2026
+ -07-06 - 2026-07-17\nConfidence: confirmed\nTheater site: https://vyt.com\
+ nSource: https://vyt.com/section/education
+GEO:33.4543;-112.0722
 URL:https://vyt.com/section/education
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -356,11 +388,12 @@ DTSTART;VALUE=DATE:20260706
 DTEND;VALUE=DATE:20260711
 SUMMARY:📝 Greasepaint Youtheatre: Summer Camp: Greasepaint's Got Talent 
  (Registration)
-LOCATION:Scottsdale\, AZ
+LOCATION:7020 E 2nd St\, Scottsdale\, AZ 85251
 DESCRIPTION:Theater: Greasepaint Youtheatre\nType: Registration\nCity: Scot
- tsdale\nCast age cap: 19\nRun: 2026-07-06 - 2026-07-10\nConfidence: confir
- med\nTheater site: https://greasepaint.org\nSource: https://greasepaint.or
- g/classes/
+ tsdale\nAddress: 7020 E 2nd St\, Scottsdale\, AZ 85251\nCast age cap: 19\n
+ Run: 2026-07-06 - 2026-07-10\nConfidence: confirmed\nTheater site: https:/
+ /greasepaint.org\nSource: https://greasepaint.org/classes/
+GEO:33.4914;-111.9298
 URL:https://greasepaint.org/classes/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -372,11 +405,12 @@ DTSTART;VALUE=DATE:20260706
 DTEND;VALUE=DATE:20260711
 SUMMARY:📝 Rising Youth Theatre: Summer Camp 3: Puppet Pals (1-week) (Reg
  istration)
-LOCATION:Phoenix Center for the Arts\, Phoenix\, AZ
+LOCATION:1202 N 3rd St\, Phoenix\, AZ 85004
 DESCRIPTION:Theater: Rising Youth Theatre\nType: Registration\nCity: Phoeni
- x\nCast age cap: 18\nRun: 2026-07-06 - 2026-07-10\nConfidence: confirmed\n
- Theater site: https://risingyouththeatre.org\nSource: https://risingyoutht
- heatre.org/camp
+ x\nAddress: 1202 N 3rd St\, Phoenix\, AZ 85004\nCast age cap: 18\nRun: 202
+ 6-07-06 - 2026-07-10\nConfidence: confirmed\nTheater site: https://risingy
+ ouththeatre.org\nSource: https://risingyouththeatre.org/camp
+GEO:33.4615;-112.0697
 URL:https://risingyouththeatre.org/camp
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -388,11 +422,12 @@ DTSTART;VALUE=DATE:20260713
 DTEND;VALUE=DATE:20260718
 SUMMARY:📝 Rising Youth Theatre: Summer Camp 4: Camp Mystery (1-week) (Re
  gistration)
-LOCATION:Phoenix Center for the Arts\, Phoenix\, AZ
+LOCATION:1202 N 3rd St\, Phoenix\, AZ 85004
 DESCRIPTION:Theater: Rising Youth Theatre\nType: Registration\nCity: Phoeni
- x\nCast age cap: 18\nRun: 2026-07-13 - 2026-07-17\nConfidence: confirmed\n
- Theater site: https://risingyouththeatre.org\nSource: https://risingyoutht
- heatre.org/camp
+ x\nAddress: 1202 N 3rd St\, Phoenix\, AZ 85004\nCast age cap: 18\nRun: 202
+ 6-07-13 - 2026-07-17\nConfidence: confirmed\nTheater site: https://risingy
+ ouththeatre.org\nSource: https://risingyouththeatre.org/camp
+GEO:33.4615;-112.0697
 URL:https://risingyouththeatre.org/camp
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -404,10 +439,12 @@ DTSTART;VALUE=DATE:20260720
 DTEND;VALUE=DATE:20260725
 SUMMARY:📝 Valley Youth Theatre: Summer Camp (1-Week Session) (Registrati
  on)
-LOCATION:525 N 1st St\, Phoenix\, AZ
+LOCATION:525 N 1st St\, Phoenix\, AZ 85004
 DESCRIPTION:Theater: Valley Youth Theatre\nType: Registration\nCity: Phoeni
- x\nCast age cap: 19\nRun: 2026-07-20 - 2026-07-24\nConfidence: confirmed\n
- Theater site: https://vyt.com\nSource: https://vyt.com/section/education
+ x\nAddress: 525 N 1st St\, Phoenix\, AZ 85004\nCast age cap: 19\nRun: 2026
+ -07-20 - 2026-07-24\nConfidence: confirmed\nTheater site: https://vyt.com\
+ nSource: https://vyt.com/section/education
+GEO:33.4543;-112.0722
 URL:https://vyt.com/section/education
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -419,11 +456,12 @@ DTSTART;VALUE=DATE:20260720
 DTEND;VALUE=DATE:20260725
 SUMMARY:📝 Rising Youth Theatre: Summer Camp 5: Story Spinners (1-week) (
  Registration)
-LOCATION:Phoenix Center for the Arts\, Phoenix\, AZ
+LOCATION:1202 N 3rd St\, Phoenix\, AZ 85004
 DESCRIPTION:Theater: Rising Youth Theatre\nType: Registration\nCity: Phoeni
- x\nCast age cap: 18\nRun: 2026-07-20 - 2026-07-24\nConfidence: confirmed\n
- Theater site: https://risingyouththeatre.org\nSource: https://risingyoutht
- heatre.org/camp
+ x\nAddress: 1202 N 3rd St\, Phoenix\, AZ 85004\nCast age cap: 18\nRun: 202
+ 6-07-20 - 2026-07-24\nConfidence: confirmed\nTheater site: https://risingy
+ ouththeatre.org\nSource: https://risingyouththeatre.org/camp
+GEO:33.4615;-112.0697
 URL:https://risingyouththeatre.org/camp
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -435,11 +473,12 @@ DTSTART;VALUE=DATE:20260720
 DTEND;VALUE=DATE:20260801
 SUMMARY:📝 Spotlight Youth Theatre: Summer Camp 4: Dragon Training (Regis
  tration)
-LOCATION:10620 N 43rd Ave\, Glendale\, AZ
+LOCATION:10620 N 43rd Ave\, Suite 12\, Glendale\, AZ 85304
 DESCRIPTION:Theater: Spotlight Youth Theatre\nType: Registration\nCity: Gle
- ndale\nCast age cap: 19\nRun: 2026-07-20 - 2026-07-31\nConfidence: confirm
- ed\nTheater site: https://sytaz.org\nSource: https://sytaz.org/summer-camp
- s-2026
+ ndale\nAddress: 10620 N 43rd Ave\, Suite 12\, Glendale\, AZ 85304\nCast ag
+ e cap: 19\nRun: 2026-07-20 - 2026-07-31\nConfidence: confirmed\nTheater si
+ te: https://sytaz.org\nSource: https://sytaz.org/summer-camps-2026
+GEO:33.5836;-112.1529
 URL:https://sytaz.org/summer-camps-2026
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -451,10 +490,12 @@ DTSTART;VALUE=DATE:20260725
 DTEND;VALUE=DATE:20260726
 SUMMARY:🎭 East Valley Children's Theatre: How to Train Your Dragon Jr. -
   Audition Workshop (Audition)
-LOCATION:Mesa\, AZ
+LOCATION:4501 E Main St\, Mesa\, AZ 85205
 DESCRIPTION:Theater: East Valley Children's Theatre\nType: Audition\nCity: 
- Mesa\nCast age cap: 18\nConfidence: confirmed\nTheater site: https://evct.
- org\nSource: https://evct.org/auditions/
+ Mesa\nAddress: 4501 E Main St\, Mesa\, AZ 85205\nCast age cap: 18\nConfide
+ nce: confirmed\nTheater site: https://evct.org\nSource: https://evct.org/a
+ uditions/
+GEO:33.4154;-111.7345
 URL:https://evct.org/auditions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -466,11 +507,12 @@ DTSTART;VALUE=DATE:20260727
 DTEND;VALUE=DATE:20260801
 SUMMARY:📝 Rising Youth Theatre: Summer Camp 6: Rhyme Time (1-week) (Regi
  stration)
-LOCATION:Phoenix Center for the Arts\, Phoenix\, AZ
+LOCATION:1202 N 3rd St\, Phoenix\, AZ 85004
 DESCRIPTION:Theater: Rising Youth Theatre\nType: Registration\nCity: Phoeni
- x\nCast age cap: 18\nRun: 2026-07-27 - 2026-07-31\nConfidence: confirmed\n
- Theater site: https://risingyouththeatre.org\nSource: https://risingyoutht
- heatre.org/camp
+ x\nAddress: 1202 N 3rd St\, Phoenix\, AZ 85004\nCast age cap: 18\nRun: 202
+ 6-07-27 - 2026-07-31\nConfidence: confirmed\nTheater site: https://risingy
+ ouththeatre.org\nSource: https://risingyouththeatre.org/camp
+GEO:33.4615;-112.0697
 URL:https://risingyouththeatre.org/camp
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -482,10 +524,12 @@ DTSTART;VALUE=DATE:20260727
 DTEND;VALUE=DATE:20260729
 SUMMARY:🎭 East Valley Children's Theatre: How to Train Your Dragon Jr. -
   Open Auditions (Audition)
-LOCATION:Mesa\, AZ
+LOCATION:4501 E Main St\, Mesa\, AZ 85205
 DESCRIPTION:Theater: East Valley Children's Theatre\nType: Audition\nCity: 
- Mesa\nCast age cap: 18\nRun: 2026-07-27 - 2026-07-28\nConfidence: confirme
- d\nTheater site: https://evct.org\nSource: https://evct.org/auditions/
+ Mesa\nAddress: 4501 E Main St\, Mesa\, AZ 85205\nCast age cap: 18\nRun: 20
+ 26-07-27 - 2026-07-28\nConfidence: confirmed\nTheater site: https://evct.o
+ rg\nSource: https://evct.org/auditions/
+GEO:33.4154;-111.7345
 URL:https://evct.org/auditions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -496,10 +540,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20260805
 DTEND;VALUE=DATE:20260816
 SUMMARY:🎫 Actors Youth Theatre: The Little Mermaid (Show)
-LOCATION:Gilbert\, AZ
-DESCRIPTION:Theater: Actors Youth Theatre\nType: Show\nCity: Gilbert\nCast 
- age cap: 18\nRun: 2026-08-05 - 2026-08-15\nConfidence: confirmed\nTheater 
- site: https://www.aytaz.org\nSource: https://www.aytaz.org/
+LOCATION:861 N Higley Rd\, Suite 105\, Gilbert\, AZ 85234
+DESCRIPTION:Theater: Actors Youth Theatre\nType: Show\nCity: Gilbert\nAddre
+ ss: 861 N Higley Rd\, Suite 105\, Gilbert\, AZ 85234\nCast age cap: 18\nRu
+ n: 2026-08-05 - 2026-08-15\nConfidence: confirmed\nTheater site: https://w
+ ww.aytaz.org\nSource: https://www.aytaz.org/
+GEO:33.3659;-111.7200
 URL:https://www.aytaz.org/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -510,11 +556,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260831
 SUMMARY:🎫 Valley Youth Theatre: Matilda The Musical (Show)
-LOCATION:525 N 1st St\, Phoenix\, AZ
-DESCRIPTION:Theater: Valley Youth Theatre\nType: Show\nCity: Phoenix\nCast 
- age cap: 19\nRun: 2026-08-14 - 2026-08-30\nConfidence: confirmed\nNotes: H
- erberger Theater Center\nTheater site: https://vyt.com\nSource: https://vy
- t.com/section/auditions
+LOCATION:525 N 1st St\, Phoenix\, AZ 85004
+DESCRIPTION:Theater: Valley Youth Theatre\nType: Show\nCity: Phoenix\nAddre
+ ss: 525 N 1st St\, Phoenix\, AZ 85004\nCast age cap: 19\nRun: 2026-08-14 -
+  2026-08-30\nConfidence: confirmed\nNotes: Herberger Theater Center\nTheat
+ er site: https://vyt.com\nSource: https://vyt.com/section/auditions
+GEO:33.4543;-112.0722
 URL:https://vyt.com/section/auditions
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -526,11 +573,12 @@ DTSTART;VALUE=DATE:20260820
 DTEND;VALUE=DATE:20260823
 SUMMARY:🎫 Queen Creek Performing Arts Center: Disney's Camp Rock the Mus
  ical (ages 12-18) (Show)
-LOCATION:Queen Creek\, AZ
+LOCATION:22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
 DESCRIPTION:Theater: Queen Creek Performing Arts Center\nType: Show\nCity: 
- Queen Creek\nCast age cap: 18\nRun: 2026-08-20 - 2026-08-22\nConfidence: c
- onfirmed\nTheater site: https://qcpac.com\nSource: https://qcpac.com/famil
- y-theatre-series/
+ Queen Creek\nAddress: 22149 E Ocotillo Rd\, Queen Creek\, AZ 85142\nCast a
+ ge cap: 18\nRun: 2026-08-20 - 2026-08-22\nConfidence: confirmed\nTheater s
+ ite: https://qcpac.com\nSource: https://qcpac.com/family-theatre-series/
+GEO:33.2465;-111.6049
 URL:https://qcpac.com/family-theatre-series/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -542,11 +590,12 @@ DTSTART;VALUE=DATE:20260829
 DTEND;VALUE=DATE:20260831
 SUMMARY:🎭 Fountain Hills Theater (Youth): Clue (Youth Theater) (Audition
  )
-LOCATION:Fountain Hills\, AZ
+LOCATION:11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268
 DESCRIPTION:Theater: Fountain Hills Theater (Youth)\nType: Audition\nCity: 
- Fountain Hills\nCast age cap: 19\nRun: 2026-08-29 - 2026-08-30\nConfidence
- : confirmed\nTheater site: https://fhtaz.org\nSource: https://fhtaz.org/au
- ditions/
+ Fountain Hills\nAddress: 11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268\
+ nCast age cap: 19\nRun: 2026-08-29 - 2026-08-30\nConfidence: confirmed\nTh
+ eater site: https://fhtaz.org\nSource: https://fhtaz.org/auditions/
+GEO:33.5911;-111.7061
 URL:https://fhtaz.org/auditions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -557,11 +606,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260921
 SUMMARY:🎫 Greasepaint Youtheatre: Once Upon A One More Time (Show)
-LOCATION:Scottsdale\, AZ
+LOCATION:7020 E 2nd St\, Scottsdale\, AZ 85251
 DESCRIPTION:Theater: Greasepaint Youtheatre\nType: Show\nCity: Scottsdale\n
- Cast age cap: 19\nRun: 2026-09-11 - 2026-09-20\nConfidence: confirmed\nThe
- ater site: https://greasepaint.org\nSource: https://greasepaint.org/our-sh
- ows/
+ Address: 7020 E 2nd St\, Scottsdale\, AZ 85251\nCast age cap: 19\nRun: 202
+ 6-09-11 - 2026-09-20\nConfidence: confirmed\nTheater site: https://greasep
+ aint.org\nSource: https://greasepaint.org/our-shows/
+GEO:33.4914;-111.9298
 URL:https://greasepaint.org/our-shows/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -573,10 +623,12 @@ DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260928
 SUMMARY:🎫 East Valley Children's Theatre: How to Train Your Dragon\, The
   Musical\, Jr. (Show)
-LOCATION:Mesa\, AZ
+LOCATION:4501 E Main St\, Mesa\, AZ 85205
 DESCRIPTION:Theater: East Valley Children's Theatre\nType: Show\nCity: Mesa
- \nCast age cap: 18\nRun: 2026-09-17 - 2026-09-27\nConfidence: confirmed\nT
- heater site: https://evct.org\nSource: https://evct.org/productions/
+ \nAddress: 4501 E Main St\, Mesa\, AZ 85205\nCast age cap: 18\nRun: 2026-0
+ 9-17 - 2026-09-27\nConfidence: confirmed\nTheater site: https://evct.org\n
+ Source: https://evct.org/productions/
+GEO:33.4154;-111.7345
 URL:https://evct.org/productions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -587,10 +639,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260921
 SUMMARY:🎫 Desert Foothills Theater: Madagascar Kids (ages 7-14) (Show)
-LOCATION:Cave Creek\, AZ
-DESCRIPTION:Theater: Desert Foothills Theater\nType: Show\nCity: Cave Creek
- \nCast age cap: 18\nRun: 2026-09-17 - 2026-09-20\nConfidence: confirmed\nT
- heater site: https://www.dftheater.org\nSource: https://www.dftheater.org/
+LOCATION:34250 N 60th St\, Bldg B\, Scottsdale\, AZ 85266
+DESCRIPTION:Theater: Desert Foothills Theater\nType: Show\nCity: Scottsdale
+ \nAddress: 34250 N 60th St\, Bldg B\, Scottsdale\, AZ 85266\nCast age cap:
+  18\nRun: 2026-09-17 - 2026-09-20\nConfidence: confirmed\nTheater site: ht
+ tps://www.dftheater.org\nSource: https://www.dftheater.org/
+GEO:33.7962;-111.9528
 URL:https://www.dftheater.org/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -601,11 +655,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261102
 SUMMARY:🎫 Fountain Hills Theater (Youth): Clue (Youth Theater) (Show)
-LOCATION:Fountain Hills\, AZ
+LOCATION:11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268
 DESCRIPTION:Theater: Fountain Hills Theater (Youth)\nType: Show\nCity: Foun
- tain Hills\nCast age cap: 19\nRun: 2026-10-16 - 2026-11-01\nConfidence: co
- nfirmed\nTheater site: https://fhtaz.org\nSource: https://fhtaz.org/auditi
- ons/
+ tain Hills\nAddress: 11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268\nCas
+ t age cap: 19\nRun: 2026-10-16 - 2026-11-01\nConfidence: confirmed\nTheate
+ r site: https://fhtaz.org\nSource: https://fhtaz.org/auditions/
+GEO:33.5911;-111.7061
 URL:https://fhtaz.org/auditions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -617,11 +672,12 @@ DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261025
 SUMMARY:🎫 Queen Creek Performing Arts Center: QC Glee (youth showcase) (
  Show)
-LOCATION:Queen Creek\, AZ
+LOCATION:22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
 DESCRIPTION:Theater: Queen Creek Performing Arts Center\nType: Show\nCity: 
- Queen Creek\nCast age cap: 18\nRun: 2026-10-23 - 2026-10-24\nConfidence: c
- onfirmed\nTheater site: https://qcpac.com\nSource: https://qcpac.com/famil
- y-theatre-series/
+ Queen Creek\nAddress: 22149 E Ocotillo Rd\, Queen Creek\, AZ 85142\nCast a
+ ge cap: 18\nRun: 2026-10-23 - 2026-10-24\nConfidence: confirmed\nTheater s
+ ite: https://qcpac.com\nSource: https://qcpac.com/family-theatre-series/
+GEO:33.2465;-111.6049
 URL:https://qcpac.com/family-theatre-series/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -633,11 +689,12 @@ DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261102
 SUMMARY:🎫 Greasepaint Youtheatre: The Lightning Thief - The Percy Jackso
  n Musical (Show)
-LOCATION:Scottsdale\, AZ
+LOCATION:7020 E 2nd St\, Scottsdale\, AZ 85251
 DESCRIPTION:Theater: Greasepaint Youtheatre\nType: Show\nCity: Scottsdale\n
- Cast age cap: 19\nRun: 2026-10-23 - 2026-11-01\nConfidence: confirmed\nThe
- ater site: https://greasepaint.org\nSource: https://greasepaint.org/our-sh
- ows/
+ Address: 7020 E 2nd St\, Scottsdale\, AZ 85251\nCast age cap: 19\nRun: 202
+ 6-10-23 - 2026-11-01\nConfidence: confirmed\nTheater site: https://greasep
+ aint.org\nSource: https://greasepaint.org/our-shows/
+GEO:33.4914;-111.9298
 URL:https://greasepaint.org/our-shows/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -648,11 +705,13 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:🎫 Theater Works (YouthWorks): Toy Tales (ages 4-7) (Show)
-LOCATION:Peoria\, AZ
+LOCATION:8355 W Peoria Ave\, Peoria\, AZ 85345
 DESCRIPTION:Theater: Theater Works (YouthWorks)\nType: Show\nCity: Peoria\n
- Cast age cap: 18\nConfidence: tentative\nNotes: Year inferred from Fall 20
- 26 session page.\nTheater site: https://theaterworks.org\nSource: https://
- theaterworks.org/education-2/
+ Address: 8355 W Peoria Ave\, Peoria\, AZ 85345\nCast age cap: 18\nConfiden
+ ce: tentative\nNotes: Year inferred from Fall 2026 session page.\nTheater 
+ site: https://theaterworks.org\nSource: https://theaterworks.org/education
+ -2/
+GEO:33.5813;-112.2393
 URL:https://theaterworks.org/education-2/
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
@@ -664,11 +723,12 @@ DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261029
 SUMMARY:🎫 Theater Works (YouthWorks): The Nevermore Revue - Evening Sess
  ion (ages 8-16) (Show)
-LOCATION:Peoria\, AZ
+LOCATION:8355 W Peoria Ave\, Peoria\, AZ 85345
 DESCRIPTION:Theater: Theater Works (YouthWorks)\nType: Show\nCity: Peoria\n
- Cast age cap: 18\nRun: 2026-10-27 - 2026-10-28\nConfidence: tentative\nThe
- ater site: https://theaterworks.org\nSource: https://theaterworks.org/educ
- ation-2/
+ Address: 8355 W Peoria Ave\, Peoria\, AZ 85345\nCast age cap: 18\nRun: 202
+ 6-10-27 - 2026-10-28\nConfidence: tentative\nTheater site: https://theater
+ works.org\nSource: https://theaterworks.org/education-2/
+GEO:33.5813;-112.2393
 URL:https://theaterworks.org/education-2/
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
@@ -680,11 +740,12 @@ DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261105
 SUMMARY:🎫 Theater Works (YouthWorks): The Nevermore Revue - Afternoon Se
  ssion (ages 8-16) (Show)
-LOCATION:Peoria\, AZ
+LOCATION:8355 W Peoria Ave\, Peoria\, AZ 85345
 DESCRIPTION:Theater: Theater Works (YouthWorks)\nType: Show\nCity: Peoria\n
- Cast age cap: 18\nRun: 2026-11-03 - 2026-11-04\nConfidence: tentative\nThe
- ater site: https://theaterworks.org\nSource: https://theaterworks.org/educ
- ation-2/
+ Address: 8355 W Peoria Ave\, Peoria\, AZ 85345\nCast age cap: 18\nRun: 202
+ 6-11-03 - 2026-11-04\nConfidence: tentative\nTheater site: https://theater
+ works.org\nSource: https://theaterworks.org/education-2/
+GEO:33.5813;-112.2393
 URL:https://theaterworks.org/education-2/
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
@@ -695,11 +756,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261108
 SUMMARY:🎭 Desert Foothills Theater: Elf Jr. (ages 8-18) (Audition)
-LOCATION:Cave Creek\, AZ
-DESCRIPTION:Theater: Desert Foothills Theater\nType: Audition\nCity: Cave C
- reek\nCast age cap: 18\nRun: 2026-11-04 - 2026-11-07\nConfidence: confirme
- d\nTheater site: https://www.dftheater.org\nSource: https://www.dftheater.
- org/audition
+LOCATION:34250 N 60th St\, Bldg B\, Scottsdale\, AZ 85266
+DESCRIPTION:Theater: Desert Foothills Theater\nType: Audition\nCity: Scotts
+ dale\nAddress: 34250 N 60th St\, Bldg B\, Scottsdale\, AZ 85266\nCast age 
+ cap: 18\nRun: 2026-11-04 - 2026-11-07\nConfidence: confirmed\nTheater site
+ : https://www.dftheater.org\nSource: https://www.dftheater.org/audition
+GEO:33.7962;-111.9528
 URL:https://www.dftheater.org/audition
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -710,11 +772,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261121
 SUMMARY:🎭 Desert Foothills Theater: Trolls Jr. (ages 8-14) (Audition)
-LOCATION:Cave Creek\, AZ
-DESCRIPTION:Theater: Desert Foothills Theater\nType: Audition\nCity: Cave C
- reek\nCast age cap: 18\nRun: 2026-11-19 - 2026-11-20\nConfidence: confirme
- d\nTheater site: https://www.dftheater.org\nSource: https://www.dftheater.
- org/
+LOCATION:34250 N 60th St\, Bldg B\, Scottsdale\, AZ 85266
+DESCRIPTION:Theater: Desert Foothills Theater\nType: Audition\nCity: Scotts
+ dale\nAddress: 34250 N 60th St\, Bldg B\, Scottsdale\, AZ 85266\nCast age 
+ cap: 18\nRun: 2026-11-19 - 2026-11-20\nConfidence: confirmed\nTheater site
+ : https://www.dftheater.org\nSource: https://www.dftheater.org/
+GEO:33.7962;-111.9528
 URL:https://www.dftheater.org/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -725,11 +788,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261201
 SUMMARY:🎫 Queen Creek Performing Arts Center: Bye Bye Birdie (Show)
-LOCATION:Queen Creek\, AZ
+LOCATION:22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
 DESCRIPTION:Theater: Queen Creek Performing Arts Center\nType: Show\nCity: 
- Queen Creek\nCast age cap: 18\nRun: 2026-11-27 - 2026-11-30\nConfidence: c
- onfirmed\nTheater site: https://qcpac.com\nSource: https://qcpac.com/famil
- y-theatre-series/
+ Queen Creek\nAddress: 22149 E Ocotillo Rd\, Queen Creek\, AZ 85142\nCast a
+ ge cap: 18\nRun: 2026-11-27 - 2026-11-30\nConfidence: confirmed\nTheater s
+ ite: https://qcpac.com\nSource: https://qcpac.com/family-theatre-series/
+GEO:33.2465;-111.6049
 URL:https://qcpac.com/family-theatre-series/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -741,10 +805,12 @@ DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261214
 SUMMARY:🎫 East Valley Children's Theatre: Rudolph the Red-Nosed Reindeer
  \, Jr. (Show)
-LOCATION:Mesa\, AZ
+LOCATION:4501 E Main St\, Mesa\, AZ 85205
 DESCRIPTION:Theater: East Valley Children's Theatre\nType: Show\nCity: Mesa
- \nCast age cap: 18\nRun: 2026-12-03 - 2026-12-13\nConfidence: confirmed\nT
- heater site: https://evct.org\nSource: https://evct.org/productions/
+ \nAddress: 4501 E Main St\, Mesa\, AZ 85205\nCast age cap: 18\nRun: 2026-1
+ 2-03 - 2026-12-13\nConfidence: confirmed\nTheater site: https://evct.org\n
+ Source: https://evct.org/productions/
+GEO:33.4154;-111.7345
 URL:https://evct.org/productions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -755,11 +821,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261214
 SUMMARY:🎫 Greasepaint Youtheatre: Annie Jr. (Show)
-LOCATION:Scottsdale\, AZ
+LOCATION:7020 E 2nd St\, Scottsdale\, AZ 85251
 DESCRIPTION:Theater: Greasepaint Youtheatre\nType: Show\nCity: Scottsdale\n
- Cast age cap: 19\nRun: 2026-12-04 - 2026-12-13\nConfidence: confirmed\nThe
- ater site: https://greasepaint.org\nSource: https://greasepaint.org/our-sh
- ows/
+ Address: 7020 E 2nd St\, Scottsdale\, AZ 85251\nCast age cap: 19\nRun: 202
+ 6-12-04 - 2026-12-13\nConfidence: confirmed\nTheater site: https://greasep
+ aint.org\nSource: https://greasepaint.org/our-shows/
+GEO:33.4914;-111.9298
 URL:https://greasepaint.org/our-shows/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -770,11 +837,13 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261220
 SUMMARY:🎫 Desert Foothills Theater: Elf Jr. (ages 8-18) (Show)
-LOCATION:Cave Creek\, AZ
-DESCRIPTION:Theater: Desert Foothills Theater\nType: Show\nCity: Cave Creek
- \nCast age cap: 18\nRun: 2026-12-10 - 2026-12-19\nConfidence: confirmed\nN
- otes: Year inferred from Fri/Sat/Sun calendar match.\nTheater site: https:
- //www.dftheater.org\nSource: https://www.dftheater.org/audition
+LOCATION:34250 N 60th St\, Bldg B\, Scottsdale\, AZ 85266
+DESCRIPTION:Theater: Desert Foothills Theater\nType: Show\nCity: Scottsdale
+ \nAddress: 34250 N 60th St\, Bldg B\, Scottsdale\, AZ 85266\nCast age cap:
+  18\nRun: 2026-12-10 - 2026-12-19\nConfidence: confirmed\nNotes: Year infe
+ rred from Fri/Sat/Sun calendar match.\nTheater site: https://www.dftheater
+ .org\nSource: https://www.dftheater.org/audition
+GEO:33.7962;-111.9528
 URL:https://www.dftheater.org/audition
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -786,11 +855,12 @@ DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270102
 SUMMARY:🎫 Childsplay YETi Teen Theatre: The Spelling Bee (24 Hour Musica
  l) (Show)
-LOCATION:Tempe\, AZ
+LOCATION:700 W Rio Salado Pkwy\, Tempe\, AZ 85281
 DESCRIPTION:Theater: Childsplay YETi Teen Theatre\nType: Show\nCity: Tempe\
- nCast age cap: 18\nRun: 2026-12-31 - 2027-01-01\nConfidence: confirmed\nTh
- eater site: https://www.childsplayaz.org/yeti\nSource: https://www.childsp
- layaz.org/yeti
+ nAddress: 700 W Rio Salado Pkwy\, Tempe\, AZ 85281\nCast age cap: 18\nRun:
+  2026-12-31 - 2027-01-01\nConfidence: confirmed\nTheater site: https://www
+ .childsplayaz.org/yeti\nSource: https://www.childsplayaz.org/yeti
+GEO:33.4302;-111.9596
 URL:https://www.childsplayaz.org/yeti
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -801,12 +871,13 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270112
 SUMMARY:🎫 Detour Company Theatre: The Addams Family (Show)
-LOCATION:Scottsdale\, AZ
+LOCATION:7380 E 2nd St\, Scottsdale\, AZ 85251
 DESCRIPTION:Theater: Detour Company Theatre\nType: Show\nCity: Scottsdale\n
- Run: 2027-01-09 - 2027-01-11\nConfidence: tentative\nNotes: Dates via sear
- ch aggregation\; confirm on official page.\nTheater site: https://www.deto
- urcompanytheatre.org\nSource: https://www.detourcompanytheatre.org/shows-a
- nd-events
+ Address: 7380 E 2nd St\, Scottsdale\, AZ 85251\nRun: 2027-01-09 - 2027-01-
+ 11\nConfidence: tentative\nNotes: Dates via search aggregation\; confirm o
+ n official page.\nTheater site: https://www.detourcompanytheatre.org\nSour
+ ce: https://www.detourcompanytheatre.org/shows-and-events
+GEO:33.4914;-111.9236
 URL:https://www.detourcompanytheatre.org/shows-and-events
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
@@ -818,11 +889,12 @@ DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270111
 SUMMARY:🎭 Fountain Hills Theater (Youth): Hadestown Teen Edition (Youth 
  Theater) (Audition)
-LOCATION:Fountain Hills\, AZ
+LOCATION:11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268
 DESCRIPTION:Theater: Fountain Hills Theater (Youth)\nType: Audition\nCity: 
- Fountain Hills\nCast age cap: 19\nRun: 2027-01-09 - 2027-01-10\nConfidence
- : confirmed\nTheater site: https://fhtaz.org\nSource: https://fhtaz.org/au
- ditions/
+ Fountain Hills\nAddress: 11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268\
+ nCast age cap: 19\nRun: 2027-01-09 - 2027-01-10\nConfidence: confirmed\nTh
+ eater site: https://fhtaz.org\nSource: https://fhtaz.org/auditions/
+GEO:33.5911;-111.7061
 URL:https://fhtaz.org/auditions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -833,10 +905,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20270211
 DTEND;VALUE=DATE:20270222
 SUMMARY:🎫 East Valley Children's Theatre: Chicken Little (Show)
-LOCATION:Mesa\, AZ
+LOCATION:4501 E Main St\, Mesa\, AZ 85205
 DESCRIPTION:Theater: East Valley Children's Theatre\nType: Show\nCity: Mesa
- \nCast age cap: 18\nRun: 2027-02-11 - 2027-02-21\nConfidence: confirmed\nT
- heater site: https://evct.org\nSource: https://evct.org/productions/
+ \nAddress: 4501 E Main St\, Mesa\, AZ 85205\nCast age cap: 18\nRun: 2027-0
+ 2-11 - 2027-02-21\nConfidence: confirmed\nTheater site: https://evct.org\n
+ Source: https://evct.org/productions/
+GEO:33.4154;-111.7345
 URL:https://evct.org/productions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -847,12 +921,13 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270222
 SUMMARY:🎫 Greasepaint Youtheatre: Shrek The Musical Jr. (Show)
-LOCATION:Scottsdale\, AZ
+LOCATION:7020 E 2nd St\, Scottsdale\, AZ 85251
 DESCRIPTION:Theater: Greasepaint Youtheatre\nType: Show\nCity: Scottsdale\n
- Cast age cap: 19\nRun: 2027-02-12 - 2027-02-21\nConfidence: tentative\nNot
- es: Month/day published\; year (2027) inferred from next-season carousel.\
- nTheater site: https://greasepaint.org\nSource: https://greasepaint.org/ou
- r-shows/
+ Address: 7020 E 2nd St\, Scottsdale\, AZ 85251\nCast age cap: 19\nRun: 202
+ 7-02-12 - 2027-02-21\nConfidence: tentative\nNotes: Month/day published\; 
+ year (2027) inferred from next-season carousel.\nTheater site: https://gre
+ asepaint.org\nSource: https://greasepaint.org/our-shows/
+GEO:33.4914;-111.9298
 URL:https://greasepaint.org/our-shows/
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
@@ -863,10 +938,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270222
 SUMMARY:🎫 Desert Foothills Theater: Trolls Jr. (ages 8-14) (Show)
-LOCATION:Cave Creek\, AZ
-DESCRIPTION:Theater: Desert Foothills Theater\nType: Show\nCity: Cave Creek
- \nCast age cap: 18\nRun: 2027-02-18 - 2027-02-21\nConfidence: confirmed\nT
- heater site: https://www.dftheater.org\nSource: https://www.dftheater.org/
+LOCATION:34250 N 60th St\, Bldg B\, Scottsdale\, AZ 85266
+DESCRIPTION:Theater: Desert Foothills Theater\nType: Show\nCity: Scottsdale
+ \nAddress: 34250 N 60th St\, Bldg B\, Scottsdale\, AZ 85266\nCast age cap:
+  18\nRun: 2027-02-18 - 2027-02-21\nConfidence: confirmed\nTheater site: ht
+ tps://www.dftheater.org\nSource: https://www.dftheater.org/
+GEO:33.7962;-111.9528
 URL:https://www.dftheater.org/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -878,11 +955,12 @@ DTSTART;VALUE=DATE:20270226
 DTEND;VALUE=DATE:20270315
 SUMMARY:🎫 Fountain Hills Theater (Youth): Hadestown Teen Edition (Youth 
  Theater) (Show)
-LOCATION:Fountain Hills\, AZ
+LOCATION:11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268
 DESCRIPTION:Theater: Fountain Hills Theater (Youth)\nType: Show\nCity: Foun
- tain Hills\nCast age cap: 19\nRun: 2027-02-26 - 2027-03-14\nConfidence: co
- nfirmed\nTheater site: https://fhtaz.org\nSource: https://fhtaz.org/auditi
- ons/
+ tain Hills\nAddress: 11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268\nCas
+ t age cap: 19\nRun: 2027-02-26 - 2027-03-14\nConfidence: confirmed\nTheate
+ r site: https://fhtaz.org\nSource: https://fhtaz.org/auditions/
+GEO:33.5911;-111.7061
 URL:https://fhtaz.org/auditions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -894,11 +972,12 @@ DTSTART;VALUE=DATE:20270227
 DTEND;VALUE=DATE:20270301
 SUMMARY:🎭 Fountain Hills Theater (Youth): Disney's Descendants The Music
  al (Youth Theater) (Audition)
-LOCATION:Fountain Hills\, AZ
+LOCATION:11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268
 DESCRIPTION:Theater: Fountain Hills Theater (Youth)\nType: Audition\nCity: 
- Fountain Hills\nCast age cap: 19\nRun: 2027-02-27 - 2027-02-28\nConfidence
- : confirmed\nTheater site: https://fhtaz.org\nSource: https://fhtaz.org/au
- ditions/
+ Fountain Hills\nAddress: 11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268\
+ nCast age cap: 19\nRun: 2027-02-27 - 2027-02-28\nConfidence: confirmed\nTh
+ eater site: https://fhtaz.org\nSource: https://fhtaz.org/auditions/
+GEO:33.5911;-111.7061
 URL:https://fhtaz.org/auditions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -909,10 +988,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20270408
 DTEND;VALUE=DATE:20270412
 SUMMARY:🎫 East Valley Children's Theatre: Jungle Book (Show)
-LOCATION:Mesa\, AZ
+LOCATION:4501 E Main St\, Mesa\, AZ 85205
 DESCRIPTION:Theater: East Valley Children's Theatre\nType: Show\nCity: Mesa
- \nCast age cap: 18\nRun: 2027-04-08 - 2027-04-11\nConfidence: confirmed\nT
- heater site: https://evct.org\nSource: https://evct.org/productions/
+ \nAddress: 4501 E Main St\, Mesa\, AZ 85205\nCast age cap: 18\nRun: 2027-0
+ 4-08 - 2027-04-11\nConfidence: confirmed\nTheater site: https://evct.org\n
+ Source: https://evct.org/productions/
+GEO:33.4154;-111.7345
 URL:https://evct.org/productions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -923,11 +1004,12 @@ DTSTAMP:20200101T000000Z
 DTSTART;VALUE=DATE:20270416
 DTEND;VALUE=DATE:20270425
 SUMMARY:🎫 Queen Creek Performing Arts Center: Seussical Jr. (Show)
-LOCATION:Queen Creek\, AZ
+LOCATION:22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
 DESCRIPTION:Theater: Queen Creek Performing Arts Center\nType: Show\nCity: 
- Queen Creek\nCast age cap: 18\nRun: 2027-04-16 - 2027-04-24\nConfidence: c
- onfirmed\nTheater site: https://qcpac.com\nSource: https://qcpac.com/famil
- y-theatre-series/
+ Queen Creek\nAddress: 22149 E Ocotillo Rd\, Queen Creek\, AZ 85142\nCast a
+ ge cap: 18\nRun: 2027-04-16 - 2027-04-24\nConfidence: confirmed\nTheater s
+ ite: https://qcpac.com\nSource: https://qcpac.com/family-theatre-series/
+GEO:33.2465;-111.6049
 URL:https://qcpac.com/family-theatre-series/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -939,11 +1021,13 @@ DTSTART;VALUE=DATE:20270423
 DTEND;VALUE=DATE:20270510
 SUMMARY:🎫 Fountain Hills Theater (Youth): Disney's Descendants The Music
  al (Youth Theater) (Show)
-LOCATION:Fountain Hills\, AZ
+LOCATION:11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268
 DESCRIPTION:Theater: Fountain Hills Theater (Youth)\nType: Show\nCity: Foun
- tain Hills\nCast age cap: 19\nRun: 2027-04-23 - 2027-05-09\nConfidence: co
- nfirmed\nTheater site: https://fhtaz.org\nSource: https://fhtaz.org/events
- /disneys-descendants-the-musical/
+ tain Hills\nAddress: 11445 N Saguaro Blvd\, Fountain Hills\, AZ 85268\nCas
+ t age cap: 19\nRun: 2027-04-23 - 2027-05-09\nConfidence: confirmed\nTheate
+ r site: https://fhtaz.org\nSource: https://fhtaz.org/events/disneys-descen
+ dants-the-musical/
+GEO:33.5911;-111.7061
 URL:https://fhtaz.org/events/disneys-descendants-the-musical/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -955,10 +1039,12 @@ DTSTART;VALUE=DATE:20270610
 DTEND;VALUE=DATE:20270621
 SUMMARY:🎫 East Valley Children's Theatre: Matilda The Musical\, Jr. (Sho
  w)
-LOCATION:Mesa\, AZ
+LOCATION:4501 E Main St\, Mesa\, AZ 85205
 DESCRIPTION:Theater: East Valley Children's Theatre\nType: Show\nCity: Mesa
- \nCast age cap: 18\nRun: 2027-06-10 - 2027-06-20\nConfidence: confirmed\nT
- heater site: https://evct.org\nSource: https://evct.org/productions/
+ \nAddress: 4501 E Main St\, Mesa\, AZ 85205\nCast age cap: 18\nRun: 2027-0
+ 6-10 - 2027-06-20\nConfidence: confirmed\nTheater site: https://evct.org\n
+ Source: https://evct.org/productions/
+GEO:33.4154;-111.7345
 URL:https://evct.org/productions/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -970,11 +1056,12 @@ DTSTART;VALUE=DATE:20270625
 DTEND;VALUE=DATE:20270629
 SUMMARY:🎫 Queen Creek Performing Arts Center: Disney's The Little Mermai
  d (Show)
-LOCATION:Queen Creek\, AZ
+LOCATION:22149 E Ocotillo Rd\, Queen Creek\, AZ 85142
 DESCRIPTION:Theater: Queen Creek Performing Arts Center\nType: Show\nCity: 
- Queen Creek\nCast age cap: 18\nRun: 2027-06-25 - 2027-06-28\nConfidence: c
- onfirmed\nTheater site: https://qcpac.com\nSource: https://qcpac.com/famil
- y-theatre-series/
+ Queen Creek\nAddress: 22149 E Ocotillo Rd\, Queen Creek\, AZ 85142\nCast a
+ ge cap: 18\nRun: 2027-06-25 - 2027-06-28\nConfidence: confirmed\nTheater s
+ ite: https://qcpac.com\nSource: https://qcpac.com/family-theatre-series/
+GEO:33.2465;-111.6049
 URL:https://qcpac.com/family-theatre-series/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT

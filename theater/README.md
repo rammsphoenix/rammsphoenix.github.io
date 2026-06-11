@@ -86,6 +86,11 @@ The re‑run captures each new announcement as theaters post it.
 }
 ```
 
+Theater entries carry an `address`, `zip`, and `lat`/`lon` (decimal degrees). Each
+event inherits its theater's location: the `.ics` gets a `GEO` and a street-address
+`LOCATION`, and `calendar.html` uses those for its distance filter. When adding a new
+theater, fill in `lat`/`lon` (a ZIP-centroid is fine — the distance filter is coarse).
+
 - Events with `start: "TBD"` (or missing) are **kept** as placeholders but left out
   of the `.ics`; the build reports how many were held back so nothing is lost.
 - Each event gets a **stable UID** derived from `theater + title + type + year`, so a
