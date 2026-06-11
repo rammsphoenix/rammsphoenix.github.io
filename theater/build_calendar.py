@@ -352,6 +352,7 @@ def render_html(data: dict, vevents: dict, skipped: list, asof: dt.date, horizon
 
 <div class="actions">
   <a class="primary" href="phoenix_youth_theater.ics" download>Download .ics</a>
+  <a href="calendar.html">Calendar view</a>
   <a href="https://calendar.google.com/calendar/r/settings/addbyurl">Add to Google Calendar</a>
   <a href="README.md">How it works</a>
 </div>

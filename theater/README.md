@@ -13,7 +13,8 @@ they perform *for* young audiences.
 | `data/events.json` | **Source of truth.** Curated theaters + dated events, each with a `source` URL and a `confidence` flag. This is the file you edit. |
 | `build_calendar.py` | Generates the `.ics` and prints a diff vs. the previously committed version. Standard library only — no `pip install`. |
 | `phoenix_youth_theater.ics` | Generated calendar. Subscribe to it or import it into Google/Apple/Outlook. |
-| `index.html` | Generated browsable calendar page (GitHub Pages), with a download/subscribe link. |
+| `index.html` | Generated agenda/list page (GitHub Pages), with a download/subscribe link. |
+| `calendar.html` | Static month-grid calendar UI that reads the `.ics` live in the browser. |
 | `README.md` | This file. |
 
 Both `phoenix_youth_theater.ics` and `index.html` are generated — never edit them by
