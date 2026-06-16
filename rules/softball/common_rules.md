@@ -22,7 +22,7 @@ These rules are shared by the Freshman, Sophomore, and JV divisions.
 
 ## Base Running
 13. **Infield Fly Rule:** Not in effect.
-14. **Crashing Into a Fielder:** A runner who deliberately runs into a fielder to dislodge the ball is called out, the play is dead, and the hitter is awarded first base.
+14. **Crashing Into a Fielder:** A runner who deliberately runs into a fielder in an attempt to cause the fielder to drop the ball is called out, the play is called dead, and the hitter is awarded first base.
 15. **Obstruction:** A fielder who blocks the base or impedes the runner without possession of the ball (or not in the act of receiving it) gives the runner the base she was proceeding to.
 16. **Blocking Home Plate:** The catcher may not block home plate without the ball.
 17. **Head-First Slides:** A head-first slide results in an out, except when returning to a base already reached safely.
@@ -36,7 +36,7 @@ These rules are shared by the Freshman, Sophomore, and JV divisions.
 23. **California Tie Breaker:** In playoff ties, the last out of the previous inning starts as a runner at second base with one out, and full innings are played until a winner is determined.
 24. **Game Clock:** The umpire keeps the official clock; the home scorekeeper records the time of the first pitch.
 25. **Pace of Play:** Intentional delays or speed-ups to beat the time limit may cause forfeiture. Curfew: all play stops by 8:45 p.m. (M–Th) and 9:45 p.m. (Fri–Sat). No more than two minutes between the last out and first pitch on field changes.
-26. **Minimum Players & Forfeit:** A team must have at least eight of its own members present at game time or it forfeits. Substitutes play the outfield and bat last, may be used only twice per season, and not in consecutive games for one team. No more than two players may be called up; violations are an automatic forfeit.
+26. **Minimum Players & Forfeit:** A team must have at least eight of its own members present on the field at the scheduled start or it forfeits to its opponent (if the opponent complies). A short-handed team may use a substitute from a designated RAMMS league (see division rules for the source league). **Substitute restrictions:** a substitute plays the outfield and bats only after all regular players have batted; may be used only twice per season and not in consecutive games for one team; and must be immediately replaced if a late-arriving roster player shows up. **Call-ups:** a team that will be short of its own full complement may call up players from another team, but only eligible grades from its own division (excluding 1st/2nd-round draft picks per the division rules); any called-up player who shows up must be allowed to play; the head coach must report the called-up player's and team's full names to the Commissioner (before the game in Freshman/Sophomore, upon completion of the game in JV) for the record. A team should not call up if it expects a full roster, and no more than two players may be called up. **Any violation of any part of this rule is an automatic forfeit of that game.** The intent is to prevent forfeits when players are missing — not to build a super team.
 27. **Home & Visitor Responsibilities:** The home team keeps the scorebook, sits in the third-base dugout, and handles its trash; the visitor sits in the first-base dugout and handles its trash.
 28. **Modifications:** Modifications and final interpretation rest with the division's commissioner (and/or the RAMMS Board). Coaches should monitor emails for updates.
 
