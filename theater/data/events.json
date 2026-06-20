@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "title": "Metro Phoenix Youth Theater",
+    "description": "Registration, audition, and show dates for youth-cast theater companies across metro Phoenix. Auto-generated from data/events.json; verify dates against each theater's official site (the Source link on each event) before relying on them.",
+    "timezone": "America/Phoenix",
+    "window_months": 15
+  },
+  "theaters": [
+    {"id": "vyt", "name": "Valley Youth Theatre", "city": "Phoenix", "address": "525 N 1st St, Phoenix, AZ 85004", "zip": "85004", "lat": 33.4543, "lon": -112.0722, "website": "https://vyt.com", "age_cap": 19},
+    {"id": "greasepaint", "name": "Greasepaint Youtheatre", "city": "Scottsdale", "address": "7020 E 2nd St, Scottsdale, AZ 85251", "zip": "85251", "lat": 33.4914, "lon": -111.9298, "website": "https://greasepaint.org", "age_cap": 19},
+    {"id": "spotlight", "name": "Spotlight Youth Theatre", "city": "Glendale", "address": "10620 N 43rd Ave, Suite 12, Glendale, AZ 85304", "zip": "85304", "lat": 33.5836, "lon": -112.1529, "website": "https://sytaz.org", "age_cap": 19},
+    {"id": "starlight", "name": "Starlight Community Theater", "city": "Phoenix", "address": "15205 N 23rd Ln, Phoenix, AZ 85023", "zip": "85023", "lat": 33.6232, "lon": -112.1091, "website": "https://www.starlightcommunitytheater.com", "note": "Mixed-cast community theater; only its youth/teen productions are tracked here."},
+    {"id": "rising", "name": "Rising Youth Theatre", "city": "Phoenix", "address": "1202 N 3rd St, Phoenix, AZ 85004", "zip": "85004", "lat": 33.4615, "lon": -112.0697, "website": "https://risingyouththeatre.org", "age_cap": 18, "note": "Performs at Phoenix Center for the Arts."},
+    {"id": "dft", "name": "Desert Foothills Theater", "city": "Scottsdale", "address": "34250 N 60th St, Bldg B, Scottsdale, AZ 85266", "zip": "85266", "lat": 33.7962, "lon": -111.9528, "website": "https://www.dftheater.org", "age_cap": 18, "note": "Mixed-age company; only its youth-cast Jr./Kids titles are tracked here. Primary venue is The Holland Center."},
+    {"id": "abt_academy", "name": "Arizona Broadway Theatre Academy", "city": "Peoria", "address": "7701 W Paradise Ln, Peoria, AZ 85382", "zip": "85382", "lat": 33.6341, "lon": -112.2249, "website": "https://www.azbroadway.org/education/academy", "age_cap": 19, "note": "ABT mainstage is adult/professional and excluded; only the youth Academy is tracked."},
+    {"id": "theaterworks", "name": "Theater Works (YouthWorks)", "city": "Peoria", "address": "8355 W Peoria Ave, Peoria, AZ 85345", "zip": "85345", "lat": 33.5813, "lon": -112.2393, "website": "https://theaterworks.org", "age_cap": 18},
+    {"id": "artandsol", "name": "Art and Sol Performing Arts Program", "city": "Scottsdale", "address": "10263 E Caron St, Scottsdale, AZ 85258", "zip": "85258", "lat": 33.5690, "lon": -111.8589, "website": "https://artandsolprogram.com", "age_cap": 16, "note": "Locations in Scottsdale, Central Phoenix and Arcadia; public site stale, dates to confirm directly."},
+    {"id": "evct", "name": "East Valley Children's Theatre", "city": "Mesa", "address": "4501 E Main St, Mesa, AZ 85205", "zip": "85205", "lat": 33.4154, "lon": -111.7345, "website": "https://evct.org", "age_cap": 18, "note": "Studio/box office; mainstage shows at Mesa Arts Center (1 E Main St)."},
+    {"id": "fht_youth", "name": "Fountain Hills Theater (Youth)", "city": "Fountain Hills", "address": "11445 N Saguaro Blvd, Fountain Hills, AZ 85268", "zip": "85268", "lat": 33.5911, "lon": -111.7061, "website": "https://fhtaz.org", "age_cap": 19, "note": "FHT mainstage is adult/all-ages and excluded; only the Youth Theater track is tracked."},
+    {"id": "limelight", "name": "Limelight Performing Arts", "city": "Gilbert", "address": "511 W Guadalupe Rd, Gilbert, AZ 85233", "zip": "85233", "lat": 33.3637, "lon": -111.8009, "website": "https://ll-pa.org", "age_cap": 18, "note": "Jr. titles require all actors 18 or under."},
+    {"id": "ayt", "name": "Actors Youth Theatre", "city": "Gilbert", "address": "861 N Higley Rd, Suite 105, Gilbert, AZ 85234", "zip": "85234", "lat": 33.3659, "lon": -111.7200, "website": "https://www.aytaz.org", "age_cap": 18},
+    {"id": "yeti", "name": "Childsplay YETi Teen Theatre", "city": "Tempe", "address": "700 W Rio Salado Pkwy, Tempe, AZ 85281", "zip": "85281", "lat": 33.4302, "lon": -111.9596, "website": "https://www.childsplayaz.org/yeti", "age_cap": 18, "note": "Teen ensemble; Childsplay mainstage (professional adults) is excluded. Performs at Tempe Center for the Arts."},
+    {"id": "detour", "name": "Detour Company Theatre", "city": "Scottsdale", "address": "7380 E 2nd St, Scottsdale, AZ 85251", "zip": "85251", "lat": 33.4914, "lon": -111.9236, "website": "https://www.detourcompanytheatre.org", "note": "Inclusive company for teens and adults with disabilities; mixed ages. Performs at Scottsdale Center for the Performing Arts."},
+    {"id": "qcpac", "name": "Queen Creek Performing Arts Center", "city": "Queen Creek", "address": "22149 E Ocotillo Rd, Queen Creek, AZ 85142", "zip": "85142", "lat": 33.2465, "lon": -111.6049, "website": "https://qcpac.com", "age_cap": 18, "note": "Family Theatre Series is youth-cast (some titles ages 7-adult)."}
+  ],
+  "events": [
+    {"theater": "vyt", "title": "Matilda The Musical", "type": "audition", "start": "2026-06-16", "confidence": "confirmed", "source": "https://vyt.com/section/auditions"},
+    {"theater": "vyt", "title": "Matilda The Musical", "type": "show", "start": "2026-08-14", "end": "2026-08-30", "confidence": "confirmed", "source": "https://vyt.com/section/auditions", "notes": "Herberger Theater Center"},
+    {"theater": "vyt", "title": "Summer Camp (2-Week Session)", "type": "registration", "start": "2026-07-06", "end": "2026-07-17", "confidence": "confirmed", "source": "https://vyt.com/section/education"},
+    {"theater": "vyt", "title": "Summer Camp (1-Week Session)", "type": "registration", "start": "2026-07-20", "end": "2026-07-24", "confidence": "confirmed", "source": "https://vyt.com/section/education"},
+    {"theater": "vyt", "title": "Fall 2026 Classes (8-week session)", "type": "registration", "start": "TBD", "confidence": "tentative", "source": "https://vyt.com/section/fall-classes", "notes": "Session ends in a showcase; registration open/start date not yet published."},
+
+    {"theater": "greasepaint", "title": "Summer Camp: Broadway Heroes", "type": "registration", "start": "2026-06-08", "end": "2026-06-12", "confidence": "confirmed", "source": "https://greasepaint.org/classes/"},
+    {"theater": "greasepaint", "title": "Summer Camp: Broadway Villains", "type": "registration", "start": "2026-06-15", "end": "2026-06-19", "confidence": "confirmed", "source": "https://greasepaint.org/classes/"},
+    {"theater": "greasepaint", "title": "Summer Camp: Improv (ages 10-16)", "type": "registration", "start": "2026-06-22", "end": "2026-06-26", "confidence": "confirmed", "source": "https://greasepaint.org/classes/"},
+    {"theater": "greasepaint", "title": "Summer Camp: Greasepaint's Got Talent", "type": "registration", "start": "2026-07-06", "end": "2026-07-10", "confidence": "confirmed", "source": "https://greasepaint.org/classes/"},
+    {"theater": "greasepaint", "title": "Once Upon A One More Time", "type": "show", "start": "2026-09-11", "end": "2026-09-20", "confidence": "confirmed", "source": "https://greasepaint.org/our-shows/"},
+    {"theater": "greasepaint", "title": "The Lightning Thief - The Percy Jackson Musical", "type": "show", "start": "2026-10-23", "end": "2026-11-01", "confidence": "confirmed", "source": "https://greasepaint.org/our-shows/"},
+    {"theater": "greasepaint", "title": "Annie Jr.", "type": "show", "start": "2026-12-04", "end": "2026-12-13", "confidence": "confirmed", "source": "https://greasepaint.org/our-shows/"},
+    {"theater": "greasepaint", "title": "Shrek The Musical Jr.", "type": "show", "start": "2027-02-12", "end": "2027-02-21", "confidence": "tentative", "source": "https://greasepaint.org/our-shows/", "notes": "Month/day published; year (2027) inferred from next-season carousel."},
+
+    {"theater": "spotlight", "title": "Seussical Jr.", "type": "show", "start": "2026-05-22", "end": "2026-06-07", "confidence": "confirmed", "source": "https://sytaz.org/2025-2026-season"},
+    {"theater": "spotlight", "title": "GOBIES (end-of-season awards)", "type": "show", "start": "2026-06-15", "confidence": "confirmed", "source": "https://sytaz.org/2025-2026-season"},
+    {"theater": "spotlight", "title": "Summer Camp 1: The Ogre and the Donkey", "type": "registration", "start": "2026-06-01", "end": "2026-06-12", "confidence": "confirmed", "source": "https://sytaz.org/summer-camps-2026"},
+    {"theater": "spotlight", "title": "Summer Camp 2: Hamleton - A Rap Parody", "type": "registration", "start": "2026-06-15", "end": "2026-06-26", "confidence": "confirmed", "source": "https://sytaz.org/summer-camps-2026"},
+    {"theater": "spotlight", "title": "Summer Camp 3: SYT Pop - Demon Hunters", "type": "registration", "start": "2026-07-06", "end": "2026-07-17", "confidence": "confirmed", "source": "https://sytaz.org/summer-camps-2026"},
+    {"theater": "spotlight", "title": "Summer Camp 4: Dragon Training", "type": "registration", "start": "2026-07-20", "end": "2026-07-31", "confidence": "confirmed", "source": "https://sytaz.org/summer-camps-2026"},
+    {"theater": "spotlight", "title": "2026-2027 Season Auditions", "type": "audition", "start": "TBD", "confidence": "tentative", "source": "https://sytaz.org/auditions", "notes": "Season being planned; titles/dates not yet published."},
+
+    {"theater": "starlight", "title": "Camp Rising Star: Alice in Wonderland Jr. (ages 6-14)", "type": "registration", "start": "2026-06-15", "end": "2026-06-26", "confidence": "confirmed", "source": "https://www.starlightcommunitytheater.com"},
+    {"theater": "starlight", "title": "2026-2027 Season", "type": "show", "start": "TBD", "confidence": "tentative", "source": "https://www.starlightcommunitytheater.com/current-season", "notes": "Not yet published; check onthestage.tickets/starlight-community-theater when announced."},
+
+    {"theater": "rising", "title": "Summer Camp 1: Environment (2-week)", "type": "registration", "start": "2026-06-01", "end": "2026-06-12", "confidence": "confirmed", "source": "https://risingyouththeatre.org/camp"},
+    {"theater": "rising", "title": "Summer Camp 2: Friendship & Technology (2-week)", "type": "registration", "start": "2026-06-15", "end": "2026-06-26", "confidence": "confirmed", "source": "https://risingyouththeatre.org/camp"},
+    {"theater": "rising", "title": "Summer Camp 3: Puppet Pals (1-week)", "type": "registration", "start": "2026-07-06", "end": "2026-07-10", "confidence": "confirmed", "source": "https://risingyouththeatre.org/camp"},
+    {"theater": "rising", "title": "Summer Camp 4: Camp Mystery (1-week)", "type": "registration", "start": "2026-07-13", "end": "2026-07-17", "confidence": "confirmed", "source": "https://risingyouththeatre.org/camp"},
+    {"theater": "rising", "title": "Summer Camp 5: Story Spinners (1-week)", "type": "registration", "start": "2026-07-20", "end": "2026-07-24", "confidence": "confirmed", "source": "https://risingyouththeatre.org/camp"},
+    {"theater": "rising", "title": "Summer Camp 6: Rhyme Time (1-week)", "type": "registration", "start": "2026-07-27", "end": "2026-07-31", "confidence": "confirmed", "source": "https://risingyouththeatre.org/camp"},
+
+    {"theater": "dft", "title": "Summer Camps (ages 4-17)", "type": "registration", "start": "TBD", "confidence": "tentative", "source": "https://www.dftheater.org/", "notes": "Summer 2026; specific session dates not published."},
+    {"theater": "dft", "title": "Madagascar Kids (ages 7-14)", "type": "show", "start": "2026-09-17", "end": "2026-09-20", "confidence": "confirmed", "source": "https://www.dftheater.org/"},
+    {"theater": "dft", "title": "Elf Jr. (ages 8-18)", "type": "audition", "start": "2026-11-04", "end": "2026-11-07", "confidence": "confirmed", "source": "https://www.dftheater.org/audition"},
+    {"theater": "dft", "title": "Trolls Jr. (ages 8-14)", "type": "audition", "start": "2026-11-19", "end": "2026-11-20", "confidence": "confirmed", "source": "https://www.dftheater.org/"},
+    {"theater": "dft", "title": "Elf Jr. (ages 8-18)", "type": "show", "start": "2026-12-10", "end": "2026-12-19", "confidence": "confirmed", "source": "https://www.dftheater.org/audition", "notes": "Year inferred from Fri/Sat/Sun calendar match."},
+    {"theater": "dft", "title": "Trolls Jr. (ages 8-14)", "type": "show", "start": "2027-02-18", "end": "2027-02-21", "confidence": "confirmed", "source": "https://www.dftheater.org/"},
+
+    {"theater": "abt_academy", "title": "Summer Academy Registration", "type": "registration", "start": "2026-03-02", "confidence": "confirmed", "source": "https://www.azbroadway.org/education/academy", "notes": "2026 registration closed; 2027 dates post ~early spring."},
+    {"theater": "abt_academy", "title": "Summer Academy Camp Showcase", "type": "show", "start": "TBD", "confidence": "tentative", "source": "https://www.azbroadway.org/education/academy", "notes": "Each camp ends with a Saturday showcase; dates not published."},
+
+    {"theater": "theaterworks", "title": "Fall 2026 Youth Session Enrollment", "type": "registration", "start": "TBD", "confidence": "tentative", "source": "https://theaterworks.org/education-2/", "notes": "Classes begin first weekend of August 2026."},
+    {"theater": "theaterworks", "title": "Toy Tales (ages 4-7)", "type": "show", "start": "2026-10-24", "confidence": "tentative", "source": "https://theaterworks.org/education-2/", "notes": "Year inferred from Fall 2026 session page."},
+    {"theater": "theaterworks", "title": "The Nevermore Revue - Evening Session (ages 8-16)", "type": "show", "start": "2026-10-27", "end": "2026-10-28", "confidence": "tentative", "source": "https://theaterworks.org/education-2/"},
+    {"theater": "theaterworks", "title": "The Nevermore Revue - Afternoon Session (ages 8-16)", "type": "show", "start": "2026-11-03", "end": "2026-11-04", "confidence": "tentative", "source": "https://theaterworks.org/education-2/"},
+
+    {"theater": "artandsol", "title": "Sessions & Camps Registration", "type": "registration", "start": "TBD", "confidence": "tentative", "source": "https://artandsolprogram.com/", "notes": "Public site stale; confirm 2026-2027 dates directly (renee@artandsolprogram.com)."},
+
+    {"theater": "evct", "title": "Charlotte's Web (the musical)", "type": "show", "start": "2026-06-11", "end": "2026-06-21", "confidence": "confirmed", "source": "https://evct.org/productions/"},
+    {"theater": "evct", "title": "Musical Theatre Summer Camp (2-week)", "type": "registration", "start": "2026-06-15", "confidence": "tentative", "source": "https://evct.org/calendar/"},
+    {"theater": "evct", "title": "EVCT Cabaret 2026", "type": "show", "start": "2026-06-16", "confidence": "confirmed", "source": "https://evct.org/calendar/"},
+    {"theater": "evct", "title": "How to Train Your Dragon Jr. - Audition Workshop", "type": "audition", "start": "2026-07-25", "confidence": "confirmed", "source": "https://evct.org/auditions/"},
+    {"theater": "evct", "title": "How to Train Your Dragon Jr. - Open Auditions", "type": "audition", "start": "2026-07-27", "end": "2026-07-28", "confidence": "confirmed", "source": "https://evct.org/auditions/"},
+    {"theater": "evct", "title": "How to Train Your Dragon, The Musical, Jr.", "type": "show", "start": "2026-09-17", "end": "2026-09-27", "confidence": "confirmed", "source": "https://evct.org/productions/"},
+    {"theater": "evct", "title": "Rudolph the Red-Nosed Reindeer, Jr.", "type": "show", "start": "2026-12-03", "end": "2026-12-13", "confidence": "confirmed", "source": "https://evct.org/productions/"},
+    {"theater": "evct", "title": "Chicken Little", "type": "show", "start": "2027-02-11", "end": "2027-02-21", "confidence": "confirmed", "source": "https://evct.org/productions/"},
+    {"theater": "evct", "title": "Jungle Book", "type": "show", "start": "2027-04-08", "end": "2027-04-11", "confidence": "confirmed", "source": "https://evct.org/productions/"},
+    {"theater": "evct", "title": "Matilda The Musical, Jr.", "type": "show", "start": "2027-06-10", "end": "2027-06-20", "confidence": "confirmed", "source": "https://evct.org/productions/"},
+
+    {"theater": "fht_youth", "title": "Disney's Aladdin Kids - Performance Camp", "type": "registration", "start": "2026-07-06", "end": "2026-07-24", "confidence": "confirmed", "source": "https://app.arts-people.com/index.php?class=fht"},
+    {"theater": "fht_youth", "title": "Clue (Youth Theater)", "type": "audition", "start": "2026-08-29", "end": "2026-08-30", "confidence": "confirmed", "source": "https://fhtaz.org/auditions/"},
+    {"theater": "fht_youth", "title": "Clue (Youth Theater)", "type": "show", "start": "2026-10-16", "end": "2026-11-01", "confidence": "confirmed", "source": "https://fhtaz.org/auditions/"},
+    {"theater": "fht_youth", "title": "Hadestown Teen Edition (Youth Theater)", "type": "audition", "start": "2027-01-09", "end": "2027-01-10", "confidence": "confirmed", "source": "https://fhtaz.org/auditions/"},
+    {"theater": "fht_youth", "title": "Hadestown Teen Edition (Youth Theater)", "type": "show", "start": "2027-02-26", "end": "2027-03-14", "confidence": "confirmed", "source": "https://fhtaz.org/auditions/"},
+    {"theater": "fht_youth", "title": "Disney's Descendants The Musical (Youth Theater)", "type": "audition", "start": "2027-02-27", "end": "2027-02-28", "confidence": "confirmed", "source": "https://fhtaz.org/auditions/"},
+    {"theater": "fht_youth", "title": "Disney's Descendants The Musical (Youth Theater)", "type": "show", "start": "2027-04-23", "end": "2027-05-09", "confidence": "confirmed", "source": "https://fhtaz.org/events/disneys-descendants-the-musical/"},
+
+    {"theater": "limelight", "title": "Finding Nemo, Jr.", "type": "show", "start": "TBD", "confidence": "tentative", "source": "https://ll-pa.org/", "notes": "Currently running; confirm exact dates on ticketing link."},
+    {"theater": "limelight", "title": "2026-2027 Youth Season Auditions", "type": "audition", "start": "TBD", "confidence": "tentative", "source": "https://ll-pa.org/auditions/", "notes": "Titles/dates not yet announced."},
+
+    {"theater": "ayt", "title": "Seussical Jr.", "type": "show", "start": "2026-06-18", "end": "2026-06-26", "confidence": "confirmed", "source": "https://www.aytaz.org/"},
+    {"theater": "ayt", "title": "The Little Mermaid", "type": "show", "start": "2026-08-05", "end": "2026-08-15", "confidence": "confirmed", "source": "https://www.aytaz.org/"},
+    {"theater": "ayt", "title": "Summer 2026 Classes", "type": "registration", "start": "TBD", "confidence": "tentative", "source": "https://www.aytaz.org/classes"},
+
+    {"theater": "yeti", "title": "Fall 2026 (Season 11) Application", "type": "registration", "start": "TBD", "confidence": "tentative", "source": "https://www.childsplayaz.org/yeti"},
+    {"theater": "yeti", "title": "The Spelling Bee (24 Hour Musical)", "type": "show", "start": "2026-12-31", "end": "2027-01-01", "confidence": "confirmed", "source": "https://www.childsplayaz.org/yeti"},
+
+    {"theater": "detour", "title": "2026-2027 Season Registration", "type": "registration", "start": "TBD", "confidence": "tentative", "source": "https://www.detourcompanytheatre.org/tickets-and-registration", "notes": "Opens in August."},
+    {"theater": "detour", "title": "The Addams Family", "type": "show", "start": "2027-01-09", "end": "2027-01-11", "confidence": "tentative", "source": "https://www.detourcompanytheatre.org/shows-and-events", "notes": "Dates via search aggregation; confirm on official page."},
+
+    {"theater": "qcpac", "title": "Sizzlin' Summer Youth Drama Camp (Session 1)", "type": "registration", "start": "2026-06-01", "end": "2026-06-03", "confidence": "confirmed", "source": "https://qcpac.com/camps-workshops/"},
+    {"theater": "qcpac", "title": "Advanced Youth Drama Camp", "type": "registration", "start": "2026-06-08", "end": "2026-06-19", "confidence": "confirmed", "source": "https://qcpac.com/camps-workshops/"},
+    {"theater": "qcpac", "title": "Disney's Camp Rock - Auditions", "type": "audition", "start": "2026-06-12", "end": "2026-06-13", "confidence": "confirmed", "source": "https://qcpac.com/ct-auditions-info/auditions/"},
+    {"theater": "qcpac", "title": "Sizzlin' Summer Youth Drama Camp (Session 2)", "type": "registration", "start": "2026-06-15", "end": "2026-06-19", "confidence": "confirmed", "source": "https://qcpac.com/camps-workshops/"},
+    {"theater": "qcpac", "title": "Disney's Camp Rock - Callbacks", "type": "audition", "start": "2026-06-20", "confidence": "confirmed", "source": "https://qcpac.com/ct-auditions-info/auditions/"},
+    {"theater": "qcpac", "title": "Shrek the Musical (ages 7-adult)", "type": "show", "start": "2026-06-26", "end": "2026-06-29", "confidence": "confirmed", "source": "https://qcpac.com/family-theatre-series/"},
+    {"theater": "qcpac", "title": "Disney's Camp Rock the Musical (ages 12-18)", "type": "show", "start": "2026-08-20", "end": "2026-08-22", "confidence": "confirmed", "source": "https://qcpac.com/family-theatre-series/"},
+    {"theater": "qcpac", "title": "QC Glee (youth showcase)", "type": "show", "start": "2026-10-23", "end": "2026-10-24", "confidence": "confirmed", "source": "https://qcpac.com/family-theatre-series/"},
+    {"theater": "qcpac", "title": "Bye Bye Birdie", "type": "show", "start": "2026-11-27", "end": "2026-11-30", "confidence": "confirmed", "source": "https://qcpac.com/family-theatre-series/"},
+    {"theater": "qcpac", "title": "Seussical Jr.", "type": "show", "start": "2027-04-16", "end": "2027-04-24", "confidence": "confirmed", "source": "https://qcpac.com/family-theatre-series/"},
+    {"theater": "qcpac", "title": "Disney's The Little Mermaid", "type": "show", "start": "2027-06-25", "end": "2027-06-28", "confidence": "confirmed", "source": "https://qcpac.com/family-theatre-series/"}
+  ]
+}

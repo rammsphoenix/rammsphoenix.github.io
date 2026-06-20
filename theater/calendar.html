@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metro Phoenix Youth Theater — Calendar</title>
+<style>
+  :root{
+    --reg:#2563eb; --aud:#9333ea; --show:#16a34a;
+    --ink:#1f2933; --dim:#6b7280; --line:#e5e7eb; --bg:#f9fafb;
+  }
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);
+       margin:0 auto;padding:1.2rem clamp(.6rem,3vw,1.5rem) 4rem;max-width:1080px}
+  h1{font-size:1.45rem;margin:0 0 .15rem}
+  .sub{color:var(--dim);margin:0 0 1rem;font-size:.92rem}
+
+  .toolbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:0 0 .8rem}
+  .toolbar .spacer{flex:1}
+  button,.btn{font:inherit;font-size:.88rem;font-weight:600;color:var(--ink);background:#fff;
+       border:1px solid #d1d5db;border-radius:8px;padding:.42rem .7rem;cursor:pointer;text-decoration:none;line-height:1}
+  button:hover,.btn:hover{background:var(--bg)}
+  button.primary,.btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+  #label{font-weight:700;font-size:1.05rem;min-width:11rem;text-align:center}
+  .nav{display:flex;gap:.35rem;align-items:center}
+  .seg{display:inline-flex;border:1px solid #d1d5db;border-radius:8px;overflow:hidden}
+  .seg button{border:0;border-radius:0;border-left:1px solid #d1d5db}
+  .seg button:first-child{border-left:0}
+  .seg button.active{background:var(--ink);color:#fff}
+
+  /* filter bar */
+  .filters{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:flex-end;background:var(--bg);
+       border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;margin:0 0 1rem}
+  .fgroup{display:flex;flex-direction:column;gap:.35rem}
+  .fgroup>.flabel{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--dim);font-weight:700}
+  .types{display:flex;gap:.9rem;flex-wrap:wrap}
+  .types label{display:flex;align-items:center;gap:.35rem;font-size:.9rem;cursor:pointer;user-select:none}
+  .types input{accent-color:var(--ink);width:1rem;height:1rem}
+  .swatch{width:.7rem;height:.7rem;border-radius:3px;display:inline-block}
+  .swatch.registration{background:var(--reg)} .swatch.audition{background:var(--aud)} .swatch.show{background:var(--show)}
+  .dist{display:flex;align-items:center;gap:.6rem}
+  .dist input[type=text]{width:6.5rem;font:inherit;font-size:.9rem;padding:.4rem .55rem;border:1px solid #d1d5db;border-radius:8px}
+  .dist input[type=range]{width:9rem;accent-color:var(--ink)}
+  #distVal{font-weight:700;font-variant-numeric:tabular-nums;min-width:4.2rem;display:inline-block}
+  #zipNote{font-size:.78rem;color:var(--dim)}
+  #zipNote.err{color:#b91c1c}
+  .countline{font-size:.85rem;color:var(--dim);margin:0 0 .6rem}
+  .clear{font-size:.8rem;color:var(--dim);background:none;border:0;cursor:pointer;text-decoration:underline;padding:0}
+
+  .legend{display:flex;gap:1rem;flex-wrap:wrap;color:var(--dim);font-size:.82rem;margin:0 0 .8rem}
+  .dot{display:inline-block;width:.7rem;height:.7rem;border-radius:3px;vertical-align:-1px;margin-right:.3rem}
+  .dot.registration{background:var(--reg)} .dot.audition{background:var(--aud)} .dot.show{background:var(--show)}
+
+  .grid{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--line);gap:1px}
+  .dow{background:#fff;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--dim);font-weight:700;text-align:center;padding:.45rem 0}
+  .cell{background:#fff;min-height:7.5rem;padding:.3rem .3rem .35rem;display:flex;flex-direction:column;gap:.18rem}
+  .cell.out{background:#fbfbfc}
+  .cell .num{font-size:.78rem;color:var(--dim);font-weight:600;align-self:flex-end}
+  .cell.out .num{opacity:.45}
+  .cell.today .num{background:var(--ink);color:#fff;border-radius:999px;width:1.45rem;height:1.45rem;display:flex;align-items:center;justify-content:center}
+  .chip{font-size:.72rem;line-height:1.2;border-radius:5px;padding:.16rem .34rem;color:#fff;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left:3px solid rgba(0,0,0,.18)}
+  .chip.registration{background:var(--reg)} .chip.audition{background:var(--aud)} .chip.show{background:var(--show)}
+  .chip.tentative{opacity:.62;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.25) 0 4px,transparent 4px 8px)}
+  .more{font-size:.72rem;color:var(--dim);cursor:pointer;font-weight:600}
+  .cell.has{cursor:pointer}
+  .dots{display:none;flex-wrap:wrap;gap:3px;margin-top:1px}
+  .dot-ev{width:7px;height:7px;border-radius:50%}
+  .dot-ev.registration{background:var(--reg)} .dot-ev.audition{background:var(--aud)} .dot-ev.show{background:var(--show)}
+  .dot-ev.tentative{opacity:.5}
+  .daylist{list-style:none;margin:.5rem 0 0;padding:0}
+  .daylist li{display:flex;gap:.55rem;align-items:baseline;padding:.6rem 0;border-top:1px solid #f3f4f6;cursor:pointer}
+  .daylist .badge{flex:none} .daylist .t{font-weight:600}
+  .mi{color:var(--dim);font-weight:400;font-size:.82rem}
+
+  .agenda h2{font-size:1rem;border-bottom:2px solid #eef0f3;padding-bottom:.3rem;margin:1.4rem 0 .5rem}
+  .agenda ul{list-style:none;margin:0;padding:0}
+  .agenda li{display:grid;grid-template-columns:8.5rem 6rem 1fr;gap:.5rem;align-items:baseline;padding:.4rem 0;border-bottom:1px solid #f3f4f6;cursor:pointer}
+  .agenda .date{color:var(--dim);font-variant-numeric:tabular-nums;font-size:.88rem}
+  .badge{font-size:.68rem;text-transform:uppercase;letter-spacing:.03em;font-weight:700;border-radius:5px;padding:.1rem .4rem;color:#fff;text-align:center}
+  .badge.registration{background:var(--reg)} .badge.audition{background:var(--aud)} .badge.show{background:var(--show)}
+  .agenda .ttl{font-weight:600}
+  .agenda .mi{color:var(--dim);font-weight:400;font-size:.82rem}
+
+  .backdrop{position:fixed;inset:0;background:rgba(17,24,39,.45);display:none;align-items:center;justify-content:center;padding:1rem;z-index:20}
+  .backdrop.open{display:flex}
+  .modal{background:#fff;border-radius:14px;max-width:30rem;width:100%;padding:1.25rem 1.3rem 1.4rem;box-shadow:0 18px 50px rgba(0,0,0,.25)}
+  .modal h3{margin:.1rem 0 .15rem;font-size:1.15rem}
+  .modal .when{color:var(--dim);margin:0 0 .8rem}
+  .modal dl{display:grid;grid-template-columns:auto 1fr;gap:.3rem .8rem;margin:0 0 1rem;font-size:.92rem}
+  .modal dt{color:var(--dim)} .modal dd{margin:0}
+  .modal .close{position:relative;float:right;border:0;background:none;font-size:1.4rem;color:var(--dim);cursor:pointer;padding:0;line-height:1}
+  .modal a{color:var(--reg)}
+  .status{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:#b45309}
+
+  #msg{color:var(--dim);padding:2rem 0}
+  footer{margin-top:2rem;color:var(--dim);font-size:.8rem;border-top:1px solid #eef0f3;padding-top:1rem}
+
+  @media (max-width:620px){
+    body{padding:1rem .7rem 3.5rem}
+    h1{font-size:1.3rem}
+    /* filters: single column, full-width controls */
+    .filters{flex-direction:column;align-items:stretch;gap:.9rem;padding:.85rem}
+    .types{gap:.55rem 1rem}
+    .types label{padding:.25rem 0;font-size:.95rem}
+    .dist{flex-wrap:wrap;gap:.5rem .6rem}
+    #zip{flex:1 1 6rem;padding:.55rem}
+    #distVal{flex:0 0 auto}
+    .dist input[type=range]{flex:1 1 100%;width:100%;height:1.6rem}
+    .clear{align-self:flex-start;padding:.4rem 0}
+    /* toolbar: label row, then nav+toggle, then download */
+    .toolbar{gap:.5rem}
+    #label{order:-1;width:100%;text-align:left;min-width:auto;font-size:1.15rem;margin:0}
+    .toolbar .spacer{display:none}
+    .nav{order:1} .seg{order:2;flex:1}
+    .nav button,.seg button{min-height:42px} .seg button{flex:1}
+    .btn.primary{order:3;flex:1 1 100%;text-align:center;min-height:42px;display:flex;align-items:center;justify-content:center}
+    .countline{margin:.2rem 0 .7rem}
+    /* month grid -> compact dot grid; tap a day for its events */
+    .dow{font-size:.62rem;padding:.4rem 0}
+    .cell{min-height:3.3rem;padding:.25rem .2rem}
+    .cell .num{font-size:.82rem;align-self:center}
+    .cell.today .num{width:1.55rem;height:1.55rem}
+    .chip,.more{display:none}
+    .dots{display:flex;justify-content:center}
+    /* agenda: stack rows */
+    .agenda li{grid-template-columns:1fr;gap:.15rem;padding:.6rem 0}
+    .agenda .badge{justify-self:start}
+    .agenda .date{font-size:.92rem}
+    /* modals as bottom sheets */
+    .backdrop{align-items:flex-end;padding:0}
+    .modal{max-width:none;border-radius:16px 16px 0 0;padding:1.25rem 1.2rem 2rem}
+  }
+</style>
+</head>
+<body>
+<h1>Metro Phoenix Youth Theater</h1>
+<p class="sub">Registration, auditions &amp; shows for youth-cast theater across the Valley. Reads live from
+<code>phoenix_youth_theater.ics</code>.</p>
+
+<div class="filters">
+  <div class="fgroup">
+    <span class="flabel">Show event types</span>
+    <div class="types" id="typeFilter">
+      <label><input type="checkbox" value="show" checked><span class="swatch show"></span>Performances</label>
+      <label><input type="checkbox" value="audition" checked><span class="swatch audition"></span>Auditions</label>
+      <label><input type="checkbox" value="registration" checked><span class="swatch registration"></span>Camps &amp; registration</label>
+    </div>
+  </div>
+  <div class="fgroup">
+    <span class="flabel">Distance from ZIP</span>
+    <div class="dist">
+      <input type="text" id="zip" inputmode="numeric" maxlength="5" placeholder="e.g. 85281"
+             aria-label="Your ZIP code">
+      <input type="range" id="dist" min="5" max="65" step="5" value="65" aria-label="Maximum distance in miles">
+      <span id="distVal">Any</span>
+    </div>
+    <span id="zipNote">Enter a ZIP and drag to cap by driving-radius (straight-line miles).</span>
+  </div>
+  <button class="clear" id="clearFilters">Reset filters</button>
+</div>
+
+<div class="toolbar">
+  <div class="nav">
+    <button id="prev" aria-label="Previous month">&#8249;</button>
+    <button id="today">Today</button>
+    <button id="next" aria-label="Next month">&#8250;</button>
+  </div>
+  <div id="label">&nbsp;</div>
+  <div class="spacer"></div>
+  <div class="seg" role="tablist">
+    <button id="viewMonth" class="active">Month</button>
+    <button id="viewAgenda">Agenda</button>
+  </div>
+  <a class="btn primary" href="phoenix_youth_theater.ics" download>Download .ics</a>
+</div>
+
+<p class="countline" id="count">&nbsp;</p>
+
+<div id="msg">Loading calendar&hellip;</div>
+<div id="month" hidden></div>
+<div id="agenda" class="agenda" hidden></div>
+
+<div class="backdrop" id="backdrop">
+  <div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+</div>
+
+<footer>
+  Best-effort snapshot generated from each theater's published info &mdash; verify dates against the
+  source link before relying on them. Venue coordinates are approximate; ZIP lookups use the free
+  <a href="https://www.zippopotam.us/" target="_blank" rel="noopener">Zippopotam.us</a> service.
+  &nbsp;<a href="index.html">List view</a> &middot; <a href="README.md">How it works</a>
+</footer>
+
+<script>
+const ICS_URL = "phoenix_youth_theater.ics";
+const TYPES = ["registration","audition","show"];
+
+/* ---------- ICS parsing ---------- */
+function unfold(text){
+  const out=[];
+  for(const raw of text.replace(/\r\n/g,"\n").split("\n")){
+    if((raw.startsWith(" ")||raw.startsWith("\t")) && out.length) out[out.length-1]+=raw.slice(1);
+    else out.push(raw);
+  }
+  return out;
+}
+function unesc(v){return v.replace(/\\n/gi,"\n").replace(/\\,/g,",").replace(/\\;/g,";").replace(/\\\\/g,"\\");}
+function parseDate(s){return new Date(+s.slice(0,4),+s.slice(4,6)-1,+s.slice(6,8),12,0,0);}
+function descField(desc,key){
+  if(!desc) return "";
+  const line=desc.split("\n").find(l=>l.toLowerCase().startsWith(key.toLowerCase()+":"));
+  return line?line.slice(key.length+1).trim():"";
+}
+function parseICS(text){
+  const events=[]; let cur=null;
+  for(const line of unfold(text)){
+    if(line==="BEGIN:VEVENT"){cur={};}
+    else if(line==="END:VEVENT"){ if(cur&&cur.dtstart) events.push(buildEvent(cur)); cur=null; }
+    else if(cur){
+      const i=line.indexOf(":"); if(i<0) continue;
+      const name=line.slice(0,i).split(";")[0].toUpperCase();
+      const rawVal=line.slice(i+1), val=unesc(rawVal);
+      if(name==="UID")cur.uid=val;
+      else if(name==="SUMMARY")cur.summary=val;
+      else if(name==="DTSTART")cur.dtstart=rawVal.trim();
+      else if(name==="DTEND")cur.dtend=rawVal.trim();
+      else if(name==="DESCRIPTION")cur.description=val;
+      else if(name==="LOCATION")cur.location=val;
+      else if(name==="GEO")cur.geo=rawVal.trim();
+      else if(name==="URL")cur.url=val;
+      else if(name==="STATUS")cur.status=val;
+    }
+  }
+  return events;
+}
+function buildEvent(c){
+  const start=parseDate(c.dtstart);
+  let end=start;
+  if(c.dtend){ end=parseDate(c.dtend); end.setDate(end.getDate()-1); if(end<start) end=start; }
+  const theater=descField(c.description,"Theater")||"";
+  const typeRaw=(descField(c.description,"Type")||"show").toLowerCase();
+  const type=TYPES.includes(typeRaw)?typeRaw:"show";
+  let title=(c.summary||"").replace(/^[^\w(]+/,"").trim();
+  if(theater && title.startsWith(theater)) title=title.slice(theater.length).replace(/^:\s*/,"");
+  title=title.replace(/\s*\((Show|Audition|Registration)\)\s*$/i,"").trim();
+  let lat=null,lon=null;
+  if(c.geo && c.geo.includes(";")){ const [a,b]=c.geo.split(";"); lat=parseFloat(a); lon=parseFloat(b); }
+  return {
+    uid:c.uid, title, theater, type, start, end,
+    tentative:(c.status||"").toUpperCase()==="TENTATIVE",
+    city:descField(c.description,"City"),
+    address:c.location||descField(c.description,"Address"),
+    ageCap:descField(c.description,"Cast age cap"),
+    confidence:descField(c.description,"Confidence"),
+    source:c.url||"",
+    lat, lon,
+  };
+}
+
+/* ---------- distance helpers ---------- */
+function haversineMi(aLat,aLon,bLat,bLon){
+  const R=3958.8, toRad=x=>x*Math.PI/180;
+  const dLat=toRad(bLat-aLat), dLon=toRad(bLon-aLon);
+  const h=Math.sin(dLat/2)**2+Math.cos(toRad(aLat))*Math.cos(toRad(bLat))*Math.sin(dLon/2)**2;
+  return 2*R*Math.asin(Math.sqrt(h));
+}
+const ZIP_CACHE=loadZipCache();
+function loadZipCache(){ try{return JSON.parse(localStorage.getItem("zipCache")||"{}");}catch(e){return {};} }
+function saveZipCache(){ try{localStorage.setItem("zipCache",JSON.stringify(ZIP_CACHE));}catch(e){} }
+// Seed: venue ZIP centroids get added once events load, so local lookups can work offline.
+async function resolveZip(zip){
+  if(ZIP_CACHE[zip]) return ZIP_CACHE[zip];
+  try{
+    const r=await fetch("https://api.zippopotam.us/us/"+zip,{cache:"force-cache"});
+    if(!r.ok) throw new Error("not found");
+    const j=await r.json();
+    const p=j.places&&j.places[0];
+    if(!p) throw new Error("no place");
+    const rec={lat:parseFloat(p.latitude),lon:parseFloat(p.longitude),
+               place:(p["place name"]||"")+", "+(p["state abbreviation"]||"")};
+    ZIP_CACHE[zip]=rec; saveZipCache();
+    return rec;
+  }catch(e){ return null; }
+}
+
+/* ---------- state ---------- */
+let EVENTS=[], VISIBLE=[];
+const FILTER={ types:new Set(TYPES), maxMiles:null, origin:null, originZip:"" };
+let cursor=new Date(); cursor.setDate(1); cursor.setHours(12,0,0,0);
+let mode="month";
+
+const MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"];
+const DOW=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const sameDay=(a,b)=>a.getFullYear()===b.getFullYear()&&a.getMonth()===b.getMonth()&&a.getDate()===b.getDate();
+const startOfDay=d=>{const x=new Date(d);x.setHours(0,0,0,0);return x;};
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function fmtRange(s,e){
+  const o={month:"short",day:"numeric"};
+  if(sameDay(s,e)) return s.toLocaleDateString(undefined,{weekday:"short",...o,year:"numeric"});
+  return s.toLocaleDateString(undefined,{weekday:"short",...o})+" – "+e.toLocaleDateString(undefined,{...o,year:"numeric"});
+}
+function distOf(e){
+  if(!FILTER.origin || e.lat==null) return null;
+  return haversineMi(FILTER.origin.lat,FILTER.origin.lon,e.lat,e.lon);
+}
+
+/* ---------- filtering ---------- */
+function passes(e){
+  if(!FILTER.types.has(e.type)) return false;
+  if(FILTER.maxMiles!=null && FILTER.origin){
+    const d=distOf(e);
+    // Only hide events we can actually place AND that are too far. Events with
+    // no coordinates are kept visible (never blank the calendar on missing data).
+    if(d!=null && d>FILTER.maxMiles) return false;
+  }
+  return true;
+}
+function applyFilters(){
+  VISIBLE=EVENTS.filter(passes);
+  updateCount();
+  if(mode==="month") renderMonth(); else renderAgenda();
+}
+function updateCount(){
+  const c=document.getElementById("count");
+  let txt=`Showing ${VISIBLE.length} of ${EVENTS.length} events`;
+  if(FILTER.origin && FILTER.maxMiles!=null) txt+=` within ${FILTER.maxMiles} mi of ${FILTER.origin.place||FILTER.originZip}`;
+  else if(FILTER.origin) txt+=` · distances from ${FILTER.origin.place||FILTER.originZip}`;
+  // Warn if a distance cap is set but the calendar file carries no coordinates.
+  if(FILTER.origin && FILTER.maxMiles!=null && !EVENTS.some(e=>e.lat!=null))
+    txt+=" · ⚠ this calendar file has no location data, so distance can't be applied";
+  c.textContent=txt;
+}
+
+/* ---------- views ---------- */
+function renderMonth(){
+  const y=cursor.getFullYear(), m=cursor.getMonth();
+  document.getElementById("label").textContent=MONTHS[m]+" "+y;
+  const first=new Date(y,m,1,12);
+  const startGrid=new Date(first); startGrid.setDate(1-first.getDay());
+  const today=new Date();
+  let html='<div class="grid">';
+  for(const d of DOW) html+=`<div class="dow">${d}</div>`;
+  for(let i=0;i<42;i++){
+    const day=new Date(startGrid); day.setDate(startGrid.getDate()+i); day.setHours(12);
+    const out=day.getMonth()!==m, isToday=sameDay(day,today);
+    const dayEvents=VISIBLE.filter(e=>startOfDay(day)>=startOfDay(e.start)&&startOfDay(day)<=startOfDay(e.end))
+                          .sort((a,b)=>a.type.localeCompare(b.type)||a.title.localeCompare(b.title));
+    const has=dayEvents.length>0;
+    html+=`<div class="cell${out?" out":""}${isToday?" today":""}${has?" has":""}" data-day="${day.toISOString()}"><div class="num">${day.getDate()}</div>`;
+    const max=3;  // desktop: text chips
+    dayEvents.slice(0,max).forEach(e=>{
+      html+=`<div class="chip ${e.type}${e.tentative?" tentative":""}" data-uid="${e.uid}" title="${esc(e.theater+": "+e.title)}">${esc(e.title)}</div>`;
+    });
+    if(dayEvents.length>max) html+=`<div class="more">+${dayEvents.length-max} more</div>`;
+    if(has){  // mobile: colored dots (tap the day to see the list)
+      html+=`<div class="dots">`+dayEvents.slice(0,8).map(e=>`<span class="dot-ev ${e.type}${e.tentative?" tentative":""}"></span>`).join("")+`</div>`;
+    }
+    html+="</div>";
+  }
+  document.getElementById("month").innerHTML=html+"</div>";
+}
+function openDayModal(dayISO){
+  const day=new Date(dayISO);
+  const evs=VISIBLE.filter(e=>startOfDay(day)>=startOfDay(e.start)&&startOfDay(day)<=startOfDay(e.end))
+                   .sort((a,b)=>a.type.localeCompare(b.type)||a.title.localeCompare(b.title));
+  const title=day.toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric"});
+  let html=`<button class="close" aria-label="Close">&times;</button><h3>${esc(title)}</h3>`;
+  if(!evs.length){ html+=`<p class="when">No events.</p>`; }
+  else{
+    html+=`<ul class="daylist">`;
+    evs.forEach(e=>{
+      const d=distOf(e);
+      const mi=d!=null?` <span class="mi">· ${d<10?d.toFixed(1):Math.round(d)} mi</span>`:"";
+      html+=`<li data-uid="${e.uid}"><span class="badge ${e.type}">${e.type==="registration"?"camp":e.type}</span>`
+          +`<span class="t">${esc(e.theater)}: ${esc(e.title)}${e.tentative?' <span class="status">· tentative</span>':''}${mi}</span></li>`;
+    });
+    html+=`</ul>`;
+  }
+  document.getElementById("modal").innerHTML=html;
+  document.getElementById("backdrop").classList.add("open");
+  document.querySelector("#modal .close").onclick=closeModal;
+}
+function renderAgenda(){
+  document.getElementById("label").textContent="Upcoming";
+  const today=startOfDay(new Date());
+  const up=VISIBLE.filter(e=>startOfDay(e.end)>=today).sort((a,b)=>a.start-b.start);
+  const groups={};
+  up.forEach(e=>{const k=e.start.getFullYear()+"-"+e.start.getMonth();(groups[k]=groups[k]||[]).push(e);});
+  let html="";
+  if(!up.length) html='<p style="color:var(--dim)">No events match the current filters.</p>';
+  Object.keys(groups).forEach(k=>{
+    const [y,m]=k.split("-").map(Number);
+    html+=`<h2>${MONTHS[m]} ${y}</h2><ul>`;
+    groups[k].forEach(e=>{
+      const d=distOf(e);
+      const mi=d!=null?` <span class="mi">· ${d<10?d.toFixed(1):Math.round(d)} mi</span>`:"";
+      html+=`<li data-uid="${e.uid}"><span class="date">${fmtRange(e.start,e.end).replace(/, \d{4}$/,"")}</span>`
+          +`<span class="badge ${e.type}">${e.type==="registration"?"camp":e.type}</span>`
+          +`<span class="ttl">${esc(e.theater)}: ${esc(e.title)}${e.tentative?' <span class="status">· tentative</span>':''}${mi}</span></li>`;
+    });
+    html+="</ul>";
+  });
+  document.getElementById("agenda").innerHTML=html;
+}
+
+/* ---------- modal ---------- */
+function openModal(uid){
+  const e=EVENTS.find(x=>x.uid===uid); if(!e) return;
+  const rows=[];
+  rows.push(["Theater", esc(e.theater)]);
+  rows.push(["Type", e.type==="registration"?"Camp / registration":e.type.charAt(0).toUpperCase()+e.type.slice(1)]);
+  if(e.address){
+    const q=encodeURIComponent(e.address);
+    rows.push(["Location", `<a href="https://maps.google.com/?q=${q}" target="_blank" rel="noopener">${esc(e.address)} &#8599;</a>`]);
+  }
+  const d=distOf(e);
+  if(d!=null) rows.push(["Distance", `${d<10?d.toFixed(1):Math.round(d)} mi from ${esc(FILTER.origin.place||FILTER.originZip)}`]);
+  if(e.ageCap) rows.push(["Cast age cap", esc(e.ageCap)]);
+  if(e.tentative) rows.push(["Status", '<span class="status">Tentative — verify date</span>']);
+  const src=e.source?`<a href="${esc(e.source)}" target="_blank" rel="noopener">Open source &#8599;</a>`:"—";
+  document.getElementById("modal").innerHTML=
+    `<button class="close" aria-label="Close">&times;</button>`
+    +`<h3>${esc(e.title)}</h3><p class="when">${fmtRange(e.start,e.end)}</p>`
+    +`<dl>${rows.map(r=>`<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join("")}</dl><div>${src}</div>`;
+  document.getElementById("backdrop").classList.add("open");
+  document.querySelector("#modal .close").onclick=closeModal;
+}
+function closeModal(){document.getElementById("backdrop").classList.remove("open");}
+
+function setMode(next){
+  mode=next;
+  document.getElementById("viewMonth").classList.toggle("active",mode==="month");
+  document.getElementById("viewAgenda").classList.toggle("active",mode==="agenda");
+  document.getElementById("month").hidden=mode!=="month";
+  document.getElementById("agenda").hidden=mode!=="agenda";
+  document.querySelector(".nav").style.display = mode==="month" ? "" : "none";
+  if(mode==="month") renderMonth(); else renderAgenda();
+}
+
+/* ---------- filter controls ---------- */
+function distLabel(v){ return v>=65 ? "Any" : v+" mi"; }
+async function recomputeDistance(){
+  const zip=document.getElementById("zip").value.trim();
+  const slider=+document.getElementById("dist").value;
+  FILTER.originZip=zip;
+  FILTER.maxMiles = slider>=65 ? null : slider;
+  const note=document.getElementById("zipNote");
+  if(/^\d{5}$/.test(zip)){
+    note.classList.remove("err"); note.textContent="Locating "+zip+"…";
+    const rec=await resolveZip(zip);
+    if(rec){ FILTER.origin=rec; note.textContent="Distances from "+(rec.place||zip)+"."; }
+    else { FILTER.origin=null; note.classList.add("err"); note.textContent="Couldn't find ZIP "+zip+" (check it, or you may be offline)."; }
+  }else{
+    FILTER.origin=null;
+    note.classList.remove("err");
+    note.textContent = zip ? "Enter a full 5-digit ZIP." : "Enter a ZIP and drag to cap by radius (straight-line miles).";
+  }
+  applyFilters();
+}
+
+document.getElementById("typeFilter").addEventListener("change",e=>{
+  FILTER.types=new Set([...document.querySelectorAll("#typeFilter input:checked")].map(i=>i.value));
+  applyFilters();
+});
+document.getElementById("dist").addEventListener("input",e=>{
+  document.getElementById("distVal").textContent=distLabel(+e.target.value);
+});
+document.getElementById("dist").addEventListener("change",recomputeDistance);
+let zipTimer;
+document.getElementById("zip").addEventListener("input",()=>{clearTimeout(zipTimer);zipTimer=setTimeout(recomputeDistance,450);});
+document.getElementById("clearFilters").addEventListener("click",()=>{
+  document.querySelectorAll("#typeFilter input").forEach(i=>i.checked=true);
+  document.getElementById("zip").value=""; document.getElementById("dist").value=65;
+  document.getElementById("distVal").textContent="Any";
+  FILTER.types=new Set(TYPES); FILTER.maxMiles=null; FILTER.origin=null; FILTER.originZip="";
+  document.getElementById("zipNote").classList.remove("err");
+  document.getElementById("zipNote").textContent="Enter a ZIP and drag to cap by radius (straight-line miles).";
+  applyFilters();
+});
+
+document.getElementById("prev").onclick=()=>{cursor.setMonth(cursor.getMonth()-1);renderMonth();};
+document.getElementById("next").onclick=()=>{cursor.setMonth(cursor.getMonth()+1);renderMonth();};
+document.getElementById("today").onclick=()=>{cursor=new Date();cursor.setDate(1);cursor.setHours(12);renderMonth();};
+document.getElementById("viewMonth").onclick=()=>setMode("month");
+document.getElementById("viewAgenda").onclick=()=>setMode("agenda");
+document.getElementById("backdrop").onclick=ev=>{if(ev.target.id==="backdrop")closeModal();};
+document.addEventListener("keydown",ev=>{if(ev.key==="Escape")closeModal();});
+document.body.addEventListener("click",ev=>{
+  const idEl=ev.target.closest("[data-uid]");
+  if(idEl){ openModal(idEl.getAttribute("data-uid")); return; }   // chip / agenda row / day-list row
+  const cell=ev.target.closest(".cell.has");
+  if(cell){ openDayModal(cell.getAttribute("data-day")); return; } // tap a day -> its event list
+});
+// Re-render the grid on breakpoint changes so chips<->dots and tap behavior stay in sync.
+let raf; window.addEventListener("resize",()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{if(mode==="month")renderMonth();});});
+
+fetch(ICS_URL+"?_="+Date.now(),{cache:"no-store"})  // cache-bust so a stale CDN copy can't blank the filters
+  .then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.text(); })
+  .then(text=>{
+    EVENTS=parseICS(text);
+    // seed ZIP cache with venue centroids so nearby lookups work even offline.
+    // Match the ZIP at the END of the address (avoids 5-digit street numbers).
+    EVENTS.forEach(e=>{
+      const z=(e.address.match(/(\d{5})(?!.*\d)/)||[])[1];
+      if(z && e.lat!=null && !ZIP_CACHE[z]) ZIP_CACHE[z]={lat:e.lat,lon:e.lon,place:e.city+", AZ"};
+    });
+    saveZipCache();
+    VISIBLE=EVENTS.slice();
+    document.getElementById("msg").hidden=true;
+    document.getElementById("month").hidden=false;
+    const today=startOfDay(new Date());
+    const upcoming=EVENTS.filter(e=>startOfDay(e.end)>=today).sort((a,b)=>a.start-b.start)[0];
+    if(upcoming) cursor=new Date(upcoming.start.getFullYear(),upcoming.start.getMonth(),1,12);
+    updateCount();
+    // Agenda is the most usable default on phones; month grid on larger screens.
+    setMode(window.matchMedia("(max-width:620px)").matches ? "agenda" : "month");
+  })
+  .catch(err=>{
+    document.getElementById("msg").innerHTML=
+      `Couldn't load <code>${ICS_URL}</code> (${esc(err.message)}).<br>`
+      +`This page must be served over http(s) (GitHub Pages / githack), not opened as a local file.`;
+  });
+</script>
+</body>
+</html>
